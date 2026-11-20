@@ -50,7 +50,15 @@
 
     // Eye-Care Theme & Font Scale State
     themeMode: 'sepia', // 'sepia' (recommended default) | 'sage' | 'dark' | 'light'
-    fontScale: 1, // 0.92 | 1 | 1.14
+    fontScale: 1, // 0.92 | 1 | 1.15
+
+    // Reading Documents (កម្រងសំណួរ និងចម្លើយ) State
+    readingDocs: [],
+    readingItems: [],
+    selectedReadingDocId: 'all', // 'all' | 'doc-asean' | 'doc-good-gov'
+    selectedReadingSection: 'all',
+    hideReadingAnswers: false,
+    revealedAnswerIds: {},
   };
 
   // DOM Elements
@@ -60,11 +68,14 @@
     quizView: document.getElementById('quiz-view'),
     resultsView: document.getElementById('results-view'),
     browseView: document.getElementById('browse-view'),
+    readingView: document.getElementById('reading-view'),
 
     brandHomeTrigger: document.getElementById('brand-home-trigger'),
     totalBankBadge: document.getElementById('total-bank-badge'),
     btnOpenBrowse: document.getElementById('btn-open-browse'),
     btnCloseBrowse: document.getElementById('btn-close-browse'),
+    btnOpenReading: document.getElementById('btn-open-reading'),
+    btnCloseReading: document.getElementById('btn-close-reading'),
 
     // Eye-Care Theme & Font Size Controls
     themePills: document.querySelectorAll('.theme-pill'),
@@ -75,6 +86,7 @@
     // Presets
     presetRandom100: document.getElementById('preset-random-100'),
     presetSeq100: document.getElementById('preset-seq-100'),
+    presetOpenReading: document.getElementById('preset-open-reading'),
 
     // Setup Controls
     modeBtnRandom: document.getElementById('mode-btn-random'),
@@ -143,6 +155,15 @@
     browseResultsInfo: document.getElementById('browse-results-info'),
     browseCardsContainer: document.getElementById('browse-cards-container'),
     btnBrowseLoadMore: document.getElementById('btn-browse-load-more'),
+
+    // Reading Documents View
+    readingDocTabs: document.querySelectorAll('.reading-doc-tab'),
+    readingSearchInput: document.getElementById('reading-search-input'),
+    readingSectionSelect: document.getElementById('reading-section-select'),
+    btnToggleHideAnswers: document.getElementById('btn-toggle-hide-answers'),
+    labelToggleHideAnswers: document.getElementById('label-toggle-hide-answers'),
+    readingResultsInfo: document.getElementById('reading-results-info'),
+    readingCardsContainer: document.getElementById('reading-cards-container'),
   };
 
   // =========================================================================
@@ -210,9 +231,23 @@
       state.allQuestions = data.questions || [];
       state.categories = data.categories || [];
 
+      // Load Reading Documents Dataset (ASEAN & Good Governance Q&A)
+      let readingData = window.READING_DOCS_DATASET;
+      if (!readingData) {
+        try {
+          const rResp = await fetch('./data/reading_docs.json');
+          if (rResp.ok) readingData = await rResp.json();
+        } catch (_) {}
+      }
+      if (readingData && Array.isArray(readingData.documents)) {
+        state.readingDocs = readingData.documents;
+        state.readingItems = readingData.documents.flatMap((d) => d.items || []);
+      }
+
       el.totalBankBadge.textContent = `${toKhmerNum(state.allQuestions.length)} សំណួរក្នុង PDF`;
 
       populateBrowseCategorySelect();
+      populateReadingSectionSelect();
       renderCategoryList();
       updateLaunchSummary();
       bindEvents();
@@ -234,6 +269,9 @@
     el.quizView.classList.toggle('hidden', viewName !== 'quiz');
     el.resultsView.classList.toggle('hidden', viewName !== 'results');
     el.browseView.classList.toggle('hidden', viewName !== 'browse');
+    if (el.readingView) {
+      el.readingView.classList.toggle('hidden', viewName !== 'reading');
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
@@ -873,6 +911,124 @@
   }
 
   // =========================================================================
+  // VIEW 5: READING DOCUMENTS (កម្រងសំណួរ និងចម្លើយ៖ អាស៊ាន & អភិបាលកិច្ចល្អ)
+  // =========================================================================
+
+  function populateReadingSectionSelect() {
+    if (!el.readingSectionSelect) return;
+    const docId = state.selectedReadingDocId;
+    const docs =
+      docId === 'all'
+        ? state.readingDocs
+        : state.readingDocs.filter((d) => d.id === docId);
+
+    const sectionsSet = new Set();
+    docs.forEach((d) => {
+      (d.sections || []).forEach((s) => sectionsSet.add(s));
+    });
+
+    const opts = [`<option value="all">គ្រប់ផ្នែកទាំងអស់ក្នុងឯកសារនេះ</option>`];
+    sectionsSet.forEach((sec) => {
+      opts.push(`<option value="${sec}">${sec}</option>`);
+    });
+    el.readingSectionSelect.innerHTML = opts.join('');
+    state.selectedReadingSection = 'all';
+  }
+
+  function renderReadingDocuments() {
+    if (!el.readingCardsContainer) return;
+    const docId = state.selectedReadingDocId;
+    const secFilter = state.selectedReadingSection;
+    const query = (el.readingSearchInput?.value || '').trim().toLowerCase();
+
+    const matched = state.readingItems.filter((item) => {
+      if (docId !== 'all' && item.docId !== docId) return false;
+      if (secFilter !== 'all' && item.section !== secFilter) return false;
+      if (!query) return true;
+      if (String(item.number) === query || item.numberKh === query) return true;
+      if (item.question.toLowerCase().includes(query)) return true;
+      return item.answerLines.some((l) => l.toLowerCase().includes(query));
+    });
+
+    if (el.readingResultsInfo) {
+      el.readingResultsInfo.textContent = `បង្ហាញ ${toKhmerNum(matched.length)} សំណួរ-ចម្លើយ`;
+    }
+
+    if (matched.length === 0) {
+      el.readingCardsContainer.innerHTML = `
+        <div class="review-card" style="text-align:center; color: var(--text-secondary);">
+          មិនพบសំណួរ-ចម្លើយដែលត្រូវនឹងពាក្យស្វែងរកនេះទេ។
+        </div>
+      `;
+      return;
+    }
+
+    el.readingCardsContainer.innerHTML = matched
+      .map((item) => {
+        const isAnswerHidden =
+          state.hideReadingAnswers && !state.revealedAnswerIds[item.id];
+
+        const linesHtml = item.answerLines
+          .map((line) => {
+            const isBullet = /^([0-9]+\.|•|-)/.test(line);
+            return `<div class="reading-answer-line ${isBullet ? 'is-bullet' : ''}">${line}</div>`;
+          })
+          .join('');
+
+        const answerContentHtml = isAnswerHidden
+          ? `
+            <button type="button" class="reading-reveal-btn" data-reveal-id="${item.id}">
+              <span>👁 ចុចដើម្បីបង្ហាញចម្លើយ (សំណួរទី ${item.numberKh})</span>
+            </button>
+          `
+          : `
+            <div class="reading-answer-label">★ ចម្លើយផ្លូវការ</div>
+            <div class="reading-answer-lines">${linesHtml}</div>
+          `;
+
+        const docShortName =
+          item.docId === 'doc-asean' ? 'ឯកសារ៖ អាស៊ាន (ASEAN)' : 'ឯកសារ៖ អភិបាលកិច្ចល្អ';
+
+        return `
+          <article class="reading-qa-card">
+            <div class="reading-qa-header">
+              <div class="reading-qa-meta">
+                <span class="reading-doc-chip">${docShortName} • សំណួរទី ${item.numberKh}</span>
+                <span class="reading-sec-chip">${item.section}</span>
+              </div>
+              <span class="correction-source-badge">ទំព័រ PDF ${toKhmerNum(item.pdfPage)}</span>
+            </div>
+            <h3 class="reading-qa-question">${item.numberKh}. ${item.question}</h3>
+            <div class="reading-qa-answer-box">
+              ${answerContentHtml}
+            </div>
+          </article>
+        `;
+      })
+      .join('');
+
+    el.readingCardsContainer.querySelectorAll('.reading-reveal-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const id = btn.dataset.revealId;
+        state.revealedAnswerIds[id] = true;
+        renderReadingDocuments();
+      });
+    });
+  }
+
+  function openReadingView(docId = 'all') {
+    state.selectedReadingDocId = docId;
+    el.readingDocTabs.forEach((tab) => {
+      const isMatch = tab.dataset.docId === docId;
+      tab.classList.toggle('active', isMatch);
+      tab.setAttribute('aria-selected', String(isMatch));
+    });
+    populateReadingSectionSelect();
+    renderReadingDocuments();
+    showView('reading');
+  }
+
+  // =========================================================================
   // EVENT BINDINGS & KEYBOARD SHORTCUTS
   // =========================================================================
 
@@ -887,6 +1043,50 @@
       el.btnFontDecrease.addEventListener('click', () => applyFontScale(0.92));
       el.btnFontNormal.addEventListener('click', () => applyFontScale(1));
       el.btnFontIncrease.addEventListener('click', () => applyFontScale(1.15));
+    }
+
+    // Reading Documents View
+    if (el.btnOpenReading) {
+      el.btnOpenReading.addEventListener('click', () => openReadingView('all'));
+    }
+    if (el.presetOpenReading) {
+      el.presetOpenReading.addEventListener('click', () => openReadingView('all'));
+    }
+    if (el.btnCloseReading) {
+      el.btnCloseReading.addEventListener('click', () => showView('setup'));
+    }
+    el.readingDocTabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        state.selectedReadingDocId = tab.dataset.docId;
+        el.readingDocTabs.forEach((t) => {
+          const isMatch = t === tab;
+          t.classList.toggle('active', isMatch);
+          t.setAttribute('aria-selected', String(isMatch));
+        });
+        populateReadingSectionSelect();
+        renderReadingDocuments();
+      });
+    });
+    if (el.readingSearchInput) {
+      el.readingSearchInput.addEventListener('input', () => renderReadingDocuments());
+    }
+    if (el.readingSectionSelect) {
+      el.readingSectionSelect.addEventListener('change', () => {
+        state.selectedReadingSection = el.readingSectionSelect.value;
+        renderReadingDocuments();
+      });
+    }
+    if (el.btnToggleHideAnswers) {
+      el.btnToggleHideAnswers.addEventListener('click', () => {
+        state.hideReadingAnswers = !state.hideReadingAnswers;
+        state.revealedAnswerIds = {};
+        if (el.labelToggleHideAnswers) {
+          el.labelToggleHideAnswers.textContent = state.hideReadingAnswers
+            ? 'បង្ហាញចម្លើយទាំងអស់ឡើងវិញ'
+            : 'លាក់ចម្លើយដើម្បីសាកល្បងទន្ទេញ';
+        }
+        renderReadingDocuments();
+      });
     }
 
     // Browse View

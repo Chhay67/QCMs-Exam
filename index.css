@@ -1779,6 +1779,195 @@ kbd {
 }
 
 /* ==========================================================================
+   VIEW 5: READING DOCUMENTS (កម្រងសំណួរ និងចម្លើយ៖ អាស៊ាន & អភិបាលកិច្ចល្អ)
+   ========================================================================== */
+
+.btn-header-reading {
+  padding: 0.45rem 0.9rem;
+  font-size: 0.84rem;
+}
+
+.reading-doc-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+  margin-bottom: 1.15rem;
+}
+
+.reading-doc-tab {
+  text-align: left;
+  padding: 0.95rem 1.1rem;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--border-subtle);
+  background: var(--bg-surface);
+  transition: all 0.15s ease;
+}
+
+.reading-doc-tab:hover {
+  border-color: var(--brand-navy-light);
+  background: var(--bg-surface-hover);
+}
+
+.reading-doc-tab.active {
+  border-color: var(--brand-navy);
+  background: var(--brand-navy-tint);
+  box-shadow: 0 0 0 1px var(--brand-navy);
+}
+
+.doc-tab-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.14rem 0.55rem;
+  border-radius: var(--radius-pill);
+  background: var(--bg-surface-subtle);
+  color: var(--brand-navy);
+  margin-bottom: 0.35rem;
+}
+
+.reading-doc-tab.active .doc-tab-badge {
+  background: var(--brand-navy);
+  color: #ffffff;
+}
+
+[data-theme="dark"] .reading-doc-tab.active .doc-tab-badge {
+  color: hsl(218, 35%, 10%);
+}
+
+.doc-tab-title {
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.2rem;
+  line-height: 1.45;
+}
+
+.doc-tab-sub {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.reading-controls-row {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr auto;
+  gap: 0.85rem;
+  align-items: center;
+}
+
+.reading-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.reading-qa-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.45rem 1.7rem;
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.15s ease;
+}
+
+.reading-qa-card:hover {
+  border-color: var(--border-strong);
+}
+
+.reading-qa-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.reading-qa-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.reading-doc-chip {
+  font-size: 0.76rem;
+  font-weight: 700;
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--radius-pill);
+  background: var(--brand-navy);
+  color: #ffffff;
+}
+
+[data-theme="dark"] .reading-doc-chip {
+  color: hsl(218, 35%, 10%);
+}
+
+.reading-sec-chip {
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--radius-pill);
+  background: var(--bg-surface-subtle);
+  color: var(--text-secondary);
+}
+
+.reading-qa-question {
+  font-size: calc(1.12rem * var(--q-font-scale, 1));
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.78;
+  margin-bottom: 1rem;
+}
+
+.reading-qa-answer-box {
+  background: var(--bg-surface-subtle);
+  border-left: 4px solid var(--pdf-yellow-border);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 1rem 1.25rem;
+}
+
+.reading-answer-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.15rem 0.6rem;
+  border-radius: var(--radius-pill);
+  background: var(--pdf-yellow-bg);
+  color: var(--pdf-yellow-text);
+  border: 1px solid var(--pdf-yellow-border);
+  margin-bottom: 0.6rem;
+}
+
+.reading-answer-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.48rem;
+  font-size: calc(1.02rem * var(--q-font-scale, 1));
+  color: var(--text-primary);
+  line-height: 1.8;
+}
+
+.reading-answer-line.is-bullet {
+  padding-left: 0.85rem;
+}
+
+.reading-reveal-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1rem;
+  border-radius: var(--radius-sm);
+  background: var(--pdf-yellow-bg);
+  color: var(--pdf-yellow-text);
+  border: 1px solid var(--pdf-yellow-border);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+/* ==========================================================================
    FOOTER & RESPONSIVENESS
    ========================================================================== */
 
@@ -1794,7 +1983,9 @@ kbd {
 
 @media (max-width: 960px) {
   .hero-banner,
-  .config-layout {
+  .config-layout,
+  .reading-doc-tabs,
+  .reading-controls-row {
     grid-template-columns: 1fr;
   }
 
@@ -1825,7 +2016,8 @@ kbd {
     align-items: stretch;
   }
 
-  .question-card {
+  .question-card,
+  .reading-qa-card {
     padding: 1.25rem;
   }
 
