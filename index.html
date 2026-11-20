@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QCMs Exam Cambodia — ប្រព័ន្ធហ្វឹកហាត់សំណួរពហុចម្លើយមន្ត្រីរាជការ (២០២៦)</title>
+  <meta name="description" content="ប្រព័ន្ធហ្វឹកហាត់ និងប្រឡងសាកល្បងសំណួរពហុចម្លើយ (QCM) សម្រាប់បេក្ខជនត្រៀមប្រឡងសិស្សមន្ត្រីក្រមការ និងសិស្សមន្ត្រីជាន់ខ្ពស់ រៀបរៀងដោយ លោក ណុំ វណ្ណា និងលោកស្រី ម៉ប់ វិច្ឆិកា។" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Kantumruy+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+  <!-- Top Header -->
+  <header class="app-header" id="app-header">
+    <div class="header-container">
+      <div class="brand-group" id="brand-home-trigger" role="button" tabindex="0" aria-label="ត្រឡប់ទៅទំព័រដើម">
+        <div class="brand-emblem" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="brand-titles">
+          <span class="brand-kicker">ជំនួយស្មារតីបេក្ខជនត្រៀមប្រឡងមុខងារសាធារណៈ ២០២៦</span>
+          <h1 class="brand-name">QCMs Exam Cambodia</h1>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <div class="dataset-pill" id="header-dataset-stat" title="ចំនួនសំណួរសរុបក្នុងឯកសារ PDF">
+          <span class="stat-dot"></span>
+          <span id="total-bank-badge">១,៧២៥ សំណួរ</span>
+        </div>
+        <button type="button" class="btn-ghost" id="btn-open-browse" aria-label="មើលបញ្ជីសំណួរទាំងអស់">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 6h16M4 12h16M4 18h12" stroke-linecap="round"/>
+          </svg>
+          <span>បញ្ជីសំណួរ &amp; អត្រាកំណែ</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="app-main" id="app-main">
+    <!-- Loading State -->
+    <section class="state-card" id="loading-view" aria-live="polite">
+      <div class="spinner" aria-hidden="true"></div>
+      <p class="loading-title">កំពុងផ្ទុកទិន្នន័យសំណួរពហុចម្លើយ (QCM)...</p>
+      <p class="loading-sub">ដកស្រង់ចេញពីឯកសារជំនួយស្មារតី ៥៣២ ទំព័រ (ចម្លើយគំនូសពណ៌លឿងផ្លូវការ)</p>
+    </section>
+
+    <!-- VIEW 1: SETUP & CONFIGURATION -->
+    <section class="setup-view hidden" id="setup-view" aria-labelledby="setup-heading">
+      <div class="hero-banner">
+        <div class="hero-content">
+          <p class="hero-credit">រៀបរៀងដោយ៖ លោក ណុំ វណ្ណា (មន្ត្រីក្រសួងមហាផ្ទៃ) និងលោកស្រី ម៉ប់ វិច្ឆិកា (សិស្សមន្ត្រីក្រមការជំនាន់ទី១២)</p>
+          <h2 id="setup-heading" class="hero-title">វិញ្ញាសាសំណួរពហុចម្លើយ (QCM) និងអត្រាកំណែផ្លូវការ</h2>
+          <p class="hero-description">
+            ជ្រើសរើសវិញ្ញាសា ឬជំពូកសំណួរ កំណត់លំដាប់សំណួរ <strong>ចៃដន្យ (Random)</strong> ឬ <strong>តាមលំដាប់លេខរៀង (Sequence)</strong>
+            ជាមួយនឹងកម្មវិធីកំណត់ម៉ោង <strong>១ នាទី (60 វិនាទី)</strong> ក្នុង ១ សំណួរ និងការផ្ទៀងផ្ទាត់ចម្លើយត្រឹមត្រូវភ្លាមៗ។
+          </p>
+        </div>
+        <div class="hero-Preset-cards">
+          <button type="button" class="preset-card preset-featured" id="preset-random-100">
+            <div class="preset-tag">ពេញនិយមបំផុត (១–១០០)</div>
+            <div class="preset-title">ចាប់សំណួរចៃដន្យ ពីលេខ ១ ដល់ ១០០</div>
+            <div class="preset-desc">ចាប់ចៃដន្យពីសំណួរទី ១–១០០ ក្នុងកម្រង ១,២០០ សំណួរ • ១ នាទី/សំណួរ</div>
+          </button>
+          <button type="button" class="preset-card" id="preset-seq-100">
+            <div class="preset-tag">តាមលំដាប់ (១ → ១០០)</div>
+            <div class="preset-title">ធ្វើតាមលេខរៀង ពីសំណួរទី ១ ដល់ ១០០</div>
+            <div class="preset-desc">រៀងតាមលំដាប់ពី ១ ដល់ ១០០ ដូចក្នុងសៀវភៅ PDF • ១ នាទី/សំណួរ</div>
+          </button>
+        </div>
+      </div>
+
+      <div class="config-layout">
+        <!-- Left Column: Order Mode + Range + Session Settings -->
+        <div class="config-panel">
+          <div class="panel-section">
+            <div class="section-header-row">
+              <span class="step-badge">១</span>
+              <div>
+                <h3 class="section-title">ទម្រង់លំដាប់សំណួរ (Question Order Mode)</h3>
+                <p class="section-subtitle">ជ្រើសរើសរវាងការចាប់សំណួរដោយចៃដន្យ ឬរៀងតាមលំដាប់លេខរៀង</p>
+              </div>
+            </div>
+
+            <div class="mode-toggle-grid" role="radiogroup" aria-label="ទម្រង់លំដាប់សំណួរ">
+              <button type="button" class="mode-card active" id="mode-btn-random" data-mode="random" role="radio" aria-checked="true">
+                <div class="mode-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 3h5v5M4 20L21 3M21 16v5h-5M15 15l6 6M4 4l5 5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="mode-text">
+                  <div class="mode-name">សំណួរចៃដន្យ (Random Question)</div>
+                  <div class="mode-hint">ឆ្លាស់លំដាប់សំណួរដោយចៃដន្យពីចន្លោះលេខ ឬជំពូកដែលបានជ្រើសរើស</div>
+                </div>
+              </button>
+
+              <button type="button" class="mode-card" id="mode-btn-sequence" data-mode="sequence" role="radio" aria-checked="false">
+                <div class="mode-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M10 6h11M10 12h11M10 18h11M4 6h1v4M4 10h2M6 18H4c0-1 2-2 2-3s-1-1.5-2-1" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="mode-text">
+                  <div class="mode-name">សំណួរតាមលំដាប់ (Sequence Question)</div>
+                  <div class="mode-hint">ដាក់សំណួររៀងតាមលេខរៀង ១, ២, ៣... តាមលំដាប់ដើមក្នុងសៀវភៅ PDF</div>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <hr class="panel-divider" />
+
+          <div class="panel-section">
+            <div class="section-header-row">
+              <span class="step-badge">២</span>
+              <div>
+                <h3 class="section-title">កំណត់ចន្លោះលេខសំណួរ និងចំនួនសំណួរក្នុង ១ វគ្គ</h3>
+                <p class="section-subtitle">ឧទាហរណ៍៖ ពីសំណួរទី ១ ដល់ ១០០ (អាចប្ដូរតាមតម្រូវការ)</p>
+              </div>
+            </div>
+
+            <div class="range-controls-grid">
+              <div class="field-group">
+                <label for="input-range-start" class="field-label">ចាប់ពីសំណួរលេខ (From #)</label>
+                <input type="number" id="input-range-start" class="number-input" min="1" max="1725" value="1" />
+              </div>
+              <div class="field-group">
+                <label for="input-range-end" class="field-label">ដល់សំណួរលេខ (To #)</label>
+                <input type="number" id="input-range-end" class="number-input" min="1" max="1725" value="100" />
+              </div>
+              <div class="field-group field-quick-ranges">
+                <span class="field-label">ចន្លោះរហ័ស (Quick Range)</span>
+                <div class="chip-row">
+                  <button type="button" class="range-chip active" data-start="1" data-end="100">១–១០០</button>
+                  <button type="button" class="range-chip" data-start="101" data-end="200">១០១–២០០</button>
+                  <button type="button" class="range-chip" data-start="201" data-end="300">២០១–៣០០</button>
+                  <button type="button" class="range-chip" data-start="1" data-end="9999">ទាំងអស់ក្នុងផ្នែកនេះ</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="count-and-timer-row">
+              <div class="field-group">
+                <span class="field-label">ចំនួនសំណួរត្រូវប្រឡង (Questions per Quiz)</span>
+                <div class="count-selector" role="group" aria-label="ចំនួនសំណួរ">
+                  <button type="button" class="count-btn" data-count="10">១០ សំណួរ</button>
+                  <button type="button" class="count-btn" data-count="20">២០ សំណួរ</button>
+                  <button type="button" class="count-btn" data-count="50">៥០ សំណួរ</button>
+                  <button type="button" class="count-btn active" data-count="100">១០០ សំណួរ</button>
+                  <button type="button" class="count-btn" data-count="all">ទាំងអស់</button>
+                </div>
+              </div>
+
+              <div class="field-group">
+                <span class="field-label">ពេលវេលាក្នុង ១ សំណួរ (Timer)</span>
+                <div class="timer-selector" role="group" aria-label="ពេលវេលាក្នុង ១ សំណួរ">
+                  <button type="button" class="timer-btn active" data-seconds="60">១ នាទី (60s)</button>
+                  <button type="button" class="timer-btn" data-seconds="30">៣០ វិនាទី</button>
+                  <button type="button" class="timer-btn" data-seconds="90">១.៥ នាទី</button>
+                  <button type="button" class="timer-btn" data-seconds="0">មិនកំណត់ម៉ោង</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="launch-bar">
+            <div class="launch-summary">
+              <div class="launch-summary-title" id="launch-summary-title">បានជ្រើសរើស៖ ១០០ សំណួរ (ចៃដន្យពីលេខ ១–១០០)</div>
+              <div class="launch-summary-sub" id="launch-summary-sub">ពេលវេលា៖ ១ នាទី/សំណួរ • ផ្ទៀងផ្ទាត់ចម្លើយភ្លាមៗនៅពេលចុចឆ្លើយ</div>
+            </div>
+            <button type="button" class="btn-primary btn-start-quiz" id="btn-start-quiz">
+              <span>ចាប់ផ្ដើមធ្វើតេស្ត (Start Quiz)</span>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Column: Category / Exam Filter -->
+        <aside class="category-panel" aria-label="ជ្រើសរើសប្រភពវិញ្ញាសា ឬជំពូក">
+          <div class="section-header-row">
+            <span class="step-badge">៣</span>
+            <div>
+              <h3 class="section-title">ប្រភពវិញ្ញាសា និងជំពូកក្នុង PDF</h3>
+              <p class="section-subtitle">ជ្រើសរើសកម្រងសំណួរ ១,២០០ ឬវិញ្ញាសាធ្លាប់ចេញប្រឡង</p>
+            </div>
+          </div>
+
+          <div class="category-filter-tabs" role="tablist">
+            <button type="button" class="cat-tab active" data-group="bank-1200" id="tab-bank-1200">កម្រង ១,២០០ សំណួរ</button>
+            <button type="button" class="cat-tab" data-group="past-exams" id="tab-past-exams">វិញ្ញាសាធ្លាប់ចេញ (៧ វិញ្ញាសា)</button>
+            <button type="button" class="cat-tab" data-group="all" id="tab-all-pools">រួមបញ្ចូលទាំងអស់</button>
+          </div>
+
+          <div class="category-list" id="category-list" role="listbox" aria-label="បញ្ជីវិញ្ញាសា និងជំពូក">
+            <!-- Populated dynamically by app.js -->
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- VIEW 2: ACTIVE QUIZ SESSION -->
+    <section class="quiz-view hidden" id="quiz-view" aria-live="polite">
+      <!-- Quiz Top Bar -->
+      <div class="quiz-HUD">
+        <div class="hud-left">
+          <button type="button" class="btn-back-setup" id="btn-quit-quiz" title="ត្រឡប់ទៅការកំណត់វិញ្ញាសា">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 12H5M12 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>បញ្ចប់ / ប្ដូរវិញ្ញាសា</span>
+          </button>
+          <div class="hud-badges">
+            <span class="hud-badge hud-mode-badge" id="hud-mode-badge">ចៃដន្យ (Random)</span>
+            <span class="hud-badge hud-section-badge" id="hud-section-badge">កម្រង ១២០០ សំណួរ</span>
+          </div>
+        </div>
+
+        <div class="hud-center">
+          <div class="score-pills">
+            <div class="score-pill pill-correct" title="ចំនួនឆ្លើយត្រូវ">
+              <span class="pill-label">ត្រូវ</span>
+              <span class="pill-val" id="hud-correct-count">0</span>
+            </div>
+            <div class="score-pill pill-wrong" title="ចំនួនឆ្លើយខុស">
+              <span class="pill-label">ខុស</span>
+              <span class="pill-val" id="hud-wrong-count">0</span>
+            </div>
+            <div class="score-pill pill-timeout" title="ចំនួនផុតម៉ោង">
+              <span class="pill-label">ផុតម៉ោង</span>
+              <span class="pill-val" id="hud-timeout-count">0</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hud-right">
+          <div class="timer-widget" id="timer-widget" aria-label="ម៉ោងរាប់ថយក្រោយសម្រាប់សំណួរនេះ">
+            <svg class="timer-ring" viewBox="0 0 44 44" width="44" height="44" aria-hidden="true">
+              <circle class="timer-ring-bg" cx="22" cy="22" r="18" />
+              <circle class="timer-ring-progress" id="timer-ring-circle" cx="22" cy="22" r="18" stroke-dasharray="113.097" stroke-dashoffset="0" />
+            </svg>
+            <div class="timer-readout">
+              <span class="timer-caption">ម៉ោងនៅសល់</span>
+              <span class="timer-clock" id="timer-clock">01:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overall Quiz Progress Bar -->
+      <div class="session-progress-wrap">
+        <div class="session-progress-meta">
+          <span id="progress-step-label">សំណួរទី ១ នៃ ១០០</span>
+          <span id="progress-source-meta">សំណួរដើមលេខ #១ • ទំព័រ PDF 203</span>
+        </div>
+        <div class="session-progress-track">
+          <div class="session-progress-fill" id="session-progress-fill" style="width: 1%"></div>
+        </div>
+        <!-- Question Timer Horizontal Bar -->
+        <div class="question-timer-bar-track" id="question-timer-bar-track">
+          <div class="question-timer-bar-fill" id="question-timer-bar-fill" style="width: 100%"></div>
+        </div>
+      </div>
+
+      <!-- Main Question Card -->
+      <article class="question-card" id="question-card">
+        <div class="question-card-header">
+          <div class="q-number-chip" id="q-number-chip">សំណួរទី ១</div>
+          <div class="q-source-tag" id="q-source-tag">វិញ្ញាសា • ទំព័រ PDF 45</div>
+        </div>
+
+        <h2 class="question-stem" id="question-stem">កំពុងរៀបចំសំណួរ...</h2>
+
+        <!-- Options List -->
+        <div class="options-container" id="options-container" role="radiogroup" aria-label="ជម្រើសចម្លើយ">
+          <!-- Populated dynamically -->
+        </div>
+
+        <!-- Instant Correction Banner (Hidden until user clicks Check Answer or timer expires) -->
+        <div class="correction-banner hidden" id="correction-banner" role="status" aria-live="assertive">
+          <div class="correction-icon" id="correction-icon" aria-hidden="true"></div>
+          <div class="correction-body">
+            <div class="correction-title" id="correction-title">ចម្លើយត្រឹមត្រូវ!</div>
+            <div class="correction-detail" id="correction-detail"></div>
+          </div>
+          <div class="correction-source-badge" id="correction-source-badge">គំនូសពណ៌លឿង • ទំព័រ 45</div>
+        </div>
+
+        <!-- Action Footer: Select -> Click Answer -> Next Question -->
+        <div class="question-card-footer">
+          <div class="keyboard-hint" id="keyboard-hint">
+            <span>ផ្លូវកាត់៖ ចុចគ្រាប់ចុច <kbd>1</kbd>–<kbd>4</kbd> ដើម្បីជ្រើសរើស និង <kbd>Enter</kbd> ដើម្បីផ្ទៀងផ្ទាត់ចម្លើយ</span>
+          </div>
+
+          <div class="action-buttons">
+            <button type="button" class="btn-secondary" id="btn-skip-question">
+              <span>រំលងសំណួរនេះ (បង្ហាញចម្លើយ)</span>
+            </button>
+            <button type="button" class="btn-primary btn-submit-answer" id="btn-submit-answer" disabled>
+              <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>ផ្ទៀងផ្ទាត់ចម្លើយ (Check Answer)</span>
+            </button>
+            <button type="button" class="btn-primary btn-next-question hidden" id="btn-next-question">
+              <span id="btn-next-label">សំណួរបន្ទាប់ (Next Question)</span>
+              <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Mini Question Navigator Strip -->
+      <div class="question-nav-strip-card">
+        <div class="nav-strip-header">
+          <span class="nav-strip-title">តារាងតាមដានសំណួរក្នុងវគ្គនេះ</span>
+          <div class="nav-legend">
+            <span class="legend-item"><i class="dot dot-current"></i> កំពុងធ្វើ</span>
+            <span class="legend-item"><i class="dot dot-correct"></i> ត្រូវ</span>
+            <span class="legend-item"><i class="dot dot-wrong"></i> ខុស / ផុតម៉ោង</span>
+          </div>
+        </div>
+        <div class="nav-dots-grid" id="nav-dots-grid"></div>
+      </div>
+    </section>
+
+    <!-- VIEW 3: RESULTS & REVIEW SUMMARY -->
+    <section class="results-view hidden" id="results-view" aria-labelledby="results-heading">
+      <div class="results-hero-card">
+        <div class="results-score-Block">
+          <div class="score-ring-box">
+            <span class="score-percentage" id="res-percentage">0%</span>
+            <span class="score-grade-tag" id="res-grade-tag">លទ្ធផលការធ្វើតេស្ត</span>
+          </div>
+          <div class="results-headline-info">
+            <span class="results-kicker" id="res-session-meta">វគ្គហ្វឹកហាត់សំណួរពហុចម្លើយ</span>
+            <h2 id="results-heading" class="results-title">របាយការណ៍លទ្ធផល និងអត្រាកំណែ</h2>
+            <p class="results-subtitle" id="res-feedback-msg">អ្នកបានបញ្ចប់ការធ្វើតេស្តសំណួរពហុចម្លើយរួចរាល់។</p>
+          </div>
+        </div>
+
+        <div class="results-metrics-grid">
+          <div class="metric-box metric-correct">
+            <span class="metric-label">ចម្លើយត្រឹមត្រូវ</span>
+            <span class="metric-value" id="res-correct">0</span>
+          </div>
+          <div class="metric-box metric-wrong">
+            <span class="metric-label">ចម្លើយមិនត្រឹមត្រូវ</span>
+            <span class="metric-value" id="res-wrong">0</span>
+          </div>
+          <div class="metric-box metric-timeout">
+            <span class="metric-label">ផុតម៉ោង / រំលង</span>
+            <span class="metric-value" id="res-timeout">0</span>
+          </div>
+          <div class="metric-box metric-time">
+            <span class="metric-label">មធ្យមភាគក្នុង ១ សំណួរ</span>
+            <span class="metric-value" id="res-avg-time">0s</span>
+          </div>
+        </div>
+
+        <div class="results-actions-bar">
+          <button type="button" class="btn-primary" id="btn-retry-mistakes">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span id="btn-retry-mistakes-label">ធ្វើម្ដងទៀតចំពោះសំណួរខុស</span>
+          </button>
+          <button type="button" class="btn-secondary" id="btn-restart-same">
+            <span>ធ្វើតេស្តវគ្គថ្មី (ការកំណត់ដដែល)</span>
+          </button>
+          <button type="button" class="btn-ghost" id="btn-back-home">
+            <span>ត្រឡប់ទៅជ្រើសរើសវិញ្ញាសា</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Detailed Question-by-Question Review -->
+      <div class="review-list-section">
+        <div class="review-list-header">
+          <h3 class="section-title">ពិនិត្យចម្លើយលម្អិត និងចម្លើយគំនូសពណ៌លឿង (Review Answers)</h3>
+          <div class="review-filter-pills">
+            <button type="button" class="rev-filter-btn active" data-filter="all">ទាំងអស់</button>
+            <button type="button" class="rev-filter-btn" data-filter="wrong">តែសំណួរខុស / ផុតម៉ោង</button>
+            <button type="button" class="rev-filter-btn" data-filter="correct">តែសំណួរត្រូវ</button>
+          </div>
+        </div>
+        <div class="review-cards-container" id="review-cards-container"></div>
+      </div>
+    </section>
+
+    <!-- VIEW 4: FULL QUESTION BANK & ANSWER KEY BROWSER -->
+    <section class="browse-view hidden" id="browse-view" aria-labelledby="browse-heading">
+      <div class="browse-toolbar-card">
+        <div class="browse-toolbar-top">
+          <div>
+            <h2 id="browse-heading" class="section-title">បញ្ជីសំណួរពហុចម្លើយ និងអត្រាកំណែគំនូសពណ៌លឿងទាំង ១,៧២៥ សំណួរ</h2>
+            <p class="section-subtitle">ស្វែងរកសំណួរតាមពាក្យគន្លឹះ លេខរៀងសំណួរ ឬជ្រើសរើសតាមជំពូកក្នុងសៀវភៅ PDF</p>
+          </div>
+          <button type="button" class="btn-secondary" id="btn-close-browse">
+            <span>ត្រឡប់ទៅធ្វើតេស្ត</span>
+          </button>
+        </div>
+
+        <div class="browse-filters-row">
+          <div class="search-box">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35" stroke-linecap="round"/>
+            </svg>
+            <input type="search" id="browse-search-input" placeholder="ស្វែងរកពាក្យគន្លឹះ ឬលេខសំណួរ (ឧ. រដ្ឋបាល, ក្រមការ, 45)..." />
+          </div>
+          <select id="browse-category-select" class="select-input" aria-label="ជ្រើសរើសជំពូក">
+            <option value="all">គ្រប់ជំពូក និងវិញ្ញាសាទាំងអស់ (១,៧២៥ សំណួរ)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="browse-results-info" id="browse-results-info">បង្ហាញ ១០០ សំណួរដំបូង</div>
+      <div class="review-cards-container" id="browse-cards-container"></div>
+      <div class="browse-load-more-wrap">
+        <button type="button" class="btn-secondary hidden" id="btn-browse-load-more">បង្ហាញសំណួរបន្ថែមទៀត</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <div class="footer-inner">
+      <p>ប្រភពឯកសារ៖ <strong>«ជំនួយស្មារតីបេក្ខជនត្រៀមប្រឡង សិស្សមន្ត្រីក្រមការ និងសិស្សមន្ត្រីជាន់ខ្ពស់ ឆ្នាំ២០២៦»</strong> • ចម្លើយផ្លូវការគំនូសពណ៌លឿង (Yellow Highlight Edition)</p>
+    </div>
+  </footer>
+
+  <script src="./data/questions.js" defer></script>
+  <script src="./app.js" defer></script>
+</body>
+</html>
