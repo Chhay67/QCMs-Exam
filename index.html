@@ -28,6 +28,35 @@
       </div>
 
       <div class="header-actions">
+        <!-- Eye-Care Reading Theme Switcher -->
+        <div class="eyecare-bar" role="group" aria-label="ទម្រង់ការពារភ្នែក និងទំហំអក្សរ">
+          <div class="theme-switcher" role="radiogroup" aria-label="ជ្រើសរើសពណ៌ផ្ទៃអានការពារភ្នែក">
+            <button type="button" class="theme-pill active" data-theme="sepia" role="radio" aria-checked="true" title="ណែនាំល្អបំផុត៖ ក្រដាសសៀវភៅកាត់ពន្លឺពណ៌ខៀវ ការពារភ្នែកមិនឱ្យស្ងួតពេលអានយូរ (Recommended Warm Book Paper)">
+              <span class="theme-swatch swatch-sepia"></span>
+              <span>ក្រដាសសៀវភៅ</span>
+              <span class="theme-rec-badge">ល្អបំផុត</span>
+            </button>
+            <button type="button" class="theme-pill" data-theme="sage" role="radio" aria-checked="false" title="បៃតងស្រទន់៖ បន្ធូរសាច់ដុំភ្នែក និងកាត់បន្ថយការរោយភ្នែក (Relaxing Soft Sage)">
+              <span class="theme-swatch swatch-sage"></span>
+              <span>បៃតងស្រទន់</span>
+            </button>
+            <button type="button" class="theme-pill" data-theme="dark" role="radio" aria-checked="false" title="ងងឹតស្រទន់៖ សម្រាប់អានពេលយប់ មិនចាំងភ្នែក (Low-Light Night Slate)">
+              <span class="theme-swatch swatch-dark"></span>
+              <span>ពេលយប់</span>
+            </button>
+            <button type="button" class="theme-pill" data-theme="light" role="radio" aria-checked="false" title="ពន្លឺថ្ងៃធម្មតា (Clean Daylight)">
+              <span class="theme-swatch swatch-light"></span>
+              <span>ពន្លឺថ្ងៃ</span>
+            </button>
+          </div>
+
+          <div class="font-size-controls" role="group" aria-label="កែតម្រូវទំហំអក្សរ">
+            <button type="button" class="font-size-btn" id="btn-font-decrease" title="បង្រួមទំហំអក្សរ (A-)" aria-label="បង្រួមទំហំអក្សរ">A-</button>
+            <button type="button" class="font-size-btn active" id="btn-font-normal" title="ទំហំអក្សរស្តង់ដារ (A)" aria-label="ទំហំអក្សរស្តង់ដារ">A</button>
+            <button type="button" class="font-size-btn" id="btn-font-increase" title="ពង្រីកទំហំអក្សរឱ្យស្រួលអាន (A+)" aria-label="ពង្រីកទំហំអក្សរ">A+</button>
+          </div>
+        </div>
+
         <div class="dataset-pill" id="header-dataset-stat" title="ចំនួនសំណួរសរុបក្នុងឯកសារ PDF">
           <span class="stat-dot"></span>
           <span id="total-bank-badge">១,៧២៥ សំណួរ</span>

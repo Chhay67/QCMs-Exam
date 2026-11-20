@@ -47,6 +47,10 @@
     // Review & Browse State
     reviewFilter: 'all', // 'all' | 'wrong' | 'correct'
     browseLimit: 80,
+
+    // Eye-Care Theme & Font Scale State
+    themeMode: 'sepia', // 'sepia' (recommended default) | 'sage' | 'dark' | 'light'
+    fontScale: 1, // 0.92 | 1 | 1.14
   };
 
   // DOM Elements
@@ -61,6 +65,12 @@
     totalBankBadge: document.getElementById('total-bank-badge'),
     btnOpenBrowse: document.getElementById('btn-open-browse'),
     btnCloseBrowse: document.getElementById('btn-close-browse'),
+
+    // Eye-Care Theme & Font Size Controls
+    themePills: document.querySelectorAll('.theme-pill'),
+    btnFontDecrease: document.getElementById('btn-font-decrease'),
+    btnFontNormal: document.getElementById('btn-font-normal'),
+    btnFontIncrease: document.getElementById('btn-font-increase'),
 
     // Presets
     presetRandom100: document.getElementById('preset-random-100'),
@@ -136,11 +146,58 @@
   };
 
   // =========================================================================
+  // EYE-CARE THEME & READING COMFORT
+  // =========================================================================
+
+  function applyThemeMode(theme) {
+    const validThemes = ['sepia', 'sage', 'dark', 'light'];
+    const chosen = validThemes.includes(theme) ? theme : 'sepia';
+    state.themeMode = chosen;
+    document.documentElement.setAttribute('data-theme', chosen);
+    try {
+      localStorage.setItem('qcm_eyecare_theme', chosen);
+    } catch (_) {}
+
+    el.themePills.forEach((pill) => {
+      const isMatch = pill.dataset.theme === chosen;
+      pill.classList.toggle('active', isMatch);
+      pill.setAttribute('aria-checked', String(isMatch));
+    });
+  }
+
+  function applyFontScale(scale) {
+    const numScale = Number(scale) || 1;
+    state.fontScale = numScale;
+    document.documentElement.style.setProperty('--q-font-scale', String(numScale));
+    try {
+      localStorage.setItem('qcm_font_scale', String(numScale));
+    } catch (_) {}
+
+    if (el.btnFontDecrease && el.btnFontNormal && el.btnFontIncrease) {
+      el.btnFontDecrease.classList.toggle('active', numScale < 0.98);
+      el.btnFontNormal.classList.toggle('active', numScale >= 0.98 && numScale <= 1.05);
+      el.btnFontIncrease.classList.toggle('active', numScale > 1.05);
+    }
+  }
+
+  function initEyeCarePreferences() {
+    let savedTheme = 'sepia';
+    let savedScale = 1;
+    try {
+      savedTheme = localStorage.getItem('qcm_eyecare_theme') || 'sepia';
+      savedScale = Number(localStorage.getItem('qcm_font_scale')) || 1;
+    } catch (_) {}
+    applyThemeMode(savedTheme);
+    applyFontScale(savedScale);
+  }
+
+  // =========================================================================
   // INITIALIZATION
   // =========================================================================
 
   async function initApp() {
     try {
+      initEyeCarePreferences();
       let data = window.QCM_DATASET;
       if (!data) {
         const response = await fetch('./data/questions.json');
@@ -821,6 +878,16 @@
 
   function bindEvents() {
     el.brandHomeTrigger.addEventListener('click', () => showView('setup'));
+
+    // Eye-Care Theme Mode & Font Scale Controls
+    el.themePills.forEach((pill) => {
+      pill.addEventListener('click', () => applyThemeMode(pill.dataset.theme));
+    });
+    if (el.btnFontDecrease && el.btnFontNormal && el.btnFontIncrease) {
+      el.btnFontDecrease.addEventListener('click', () => applyFontScale(0.92));
+      el.btnFontNormal.addEventListener('click', () => applyFontScale(1));
+      el.btnFontIncrease.addEventListener('click', () => applyFontScale(1.15));
+    }
 
     // Browse View
     el.btnOpenBrowse.addEventListener('click', () => {
