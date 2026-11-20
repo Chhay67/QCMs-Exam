@@ -1,8 +1,19 @@
 {
   "title": "ជំនួយស្មារតីបេក្ខជនត្រៀមប្រឡង សិស្សមន្ត្រីក្រមការ និងសិស្សមន្ត្រីជាន់ខ្ពស់ (២០២៦)",
   "authors": "លោក ណុំ វណ្ណា និងលោកស្រី ម៉ប់ វិច្ឆិកា",
-  "totalQuestions": 1725,
+  "totalQuestions": 1775,
   "categories": [
+    {
+      "id": "topic-francophonie",
+      "title": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "group": "past-exams",
+      "groupTitle": "វិញ្ញាសាពិសេស & ធ្លាប់ចេញប្រឡង",
+      "count": 50,
+      "range": [
+        1,
+        50
+      ]
+    },
     {
       "id": "exam-kramkar-7",
       "title": "វិញ្ញាសាប្រឡងមន្ត្រីក្រមការ លើកទី៧ (២០១៧)",
@@ -49960,6 +49971,1456 @@
       "pdfPage": 493,
       "correctAnswer": "ឃ",
       "id": "bank-ch-14-q1200-p493"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 1,
+      "numberKh": "១",
+      "question": "តើកិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី លើកទី២០ ត្រូវបានរៀបចំឡើងនៅទីណា?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ខេត្តសៀមរាប ព្រះរាជាណាចក្រកម្ពុជា"
+        },
+        {
+          "key": "ខ",
+          "text": "ខេត្តព្រះសីហនុ ព្រះរាជាណាចក្រកម្ពុជា"
+        },
+        {
+          "key": "គ",
+          "text": "ទីក្រុងប៉ារីស សាធារណរដ្ឋបារាំង"
+        },
+        {
+          "key": "ឃ",
+          "text": "រាជធានីភ្នំពេញ ព្រះរាជាណាចក្រកម្ពុជា"
+        }
+      ],
+      "correctAnswer": "ឃ",
+      "pdfPage": 1,
+      "id": "topic-francophonie-q1-p1"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 2,
+      "numberKh": "២",
+      "question": "តើកិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី លើកទី២០ ប្រព្រឹត្តទៅនៅថ្ងៃ ខែ ឆ្នាំណា?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ថ្ងៃទី ១៥-១៦ ខែវិច្ឆិកា ឆ្នាំ ២០២៦"
+        },
+        {
+          "key": "ខ",
+          "text": "ថ្ងៃទី ១១-១២ ខែវិច្ឆិកា ឆ្នាំ ២០២៦"
+        },
+        {
+          "key": "គ",
+          "text": "ថ្ងៃទី ១៧-១៨ ខែវិច្ឆិកា ឆ្នាំ ២០២៦"
+        },
+        {
+          "key": "ឃ",
+          "text": "ថ្ងៃទី ២០-២១ ខែវិច្ឆិកា ឆ្នាំ ២០២៦"
+        }
+      ],
+      "correctAnswer": "ក",
+      "pdfPage": 1,
+      "id": "topic-francophonie-q2-p1"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 3,
+      "numberKh": "៣",
+      "question": "តើមូលបទផ្លូវការនៃកិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី លើកទី២០ គឺជាអ្វី?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "«សន្តិភាព ស្ថិរភាព និងការអភិវឌ្ឍប្រកបដោយចីរភាព»"
+        },
+        {
+          "key": "ខ",
+          "text": "«បង្កើតថ្មី ច្នៃប្រឌិត និងធ្វើសកម្មភាពជាភាសាបារាំង»"
+        },
+        {
+          "key": "គ",
+          "text": "«រួមគ្នាបន្តកសាងសន្តិភាព ដើម្បីវិបុលភាពរួម និងស្ថិរភាពយូរអង្វែង»"
+        },
+        {
+          "key": "ឃ",
+          "text": "«ភាសាបារាំង និងបរិវត្តកម្មឌីជីថល»"
+        }
+      ],
+      "correctAnswer": "គ",
+      "pdfPage": 1,
+      "id": "topic-francophonie-q3-p1"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 4,
+      "numberKh": "៤",
+      "question": "តើឥស្សរជនខ្មែររូបណាដែលត្រូវបានលើកឡើងក្នុងសេចក្តីថ្លែងការណ៍ថាជាព្រះបិតាស្ថាបនិកមួយអង្គនៃអង្គការអន្តររដ្ឋាភិបា លហ្វ្រង់កូហ្វូនី?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "សម្តេចព្រះសង្ឃរាជ ជួន ណាត"
+        },
+        {
+          "key": "ខ",
+          "text": "ព្រះករុណា ព្រះបរមរតនកោដ្ឋ ព្រះបាទសម្តេច ព្រះនរោត្តម សីហនុ"
+        },
+        {
+          "key": "គ",
+          "text": "ព្រះករុណា ព្រះបាទសម្តេចព្រះបរមនាថ នរោត្តម សីហមុនី កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី"
+        },
+        {
+          "key": "ឃ",
+          "text": "សម្តេចព្រះមហាក្សត្រី នរោត្តម មុនិនាថ សីហនុ"
+        }
+      ],
+      "correctAnswer": "ខ",
+      "pdfPage": 1,
+      "id": "topic-francophonie-q4-p1"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 5,
+      "numberKh": "៥",
+      "question": "តើកិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី លើកទី២០ នៅភ្នំពេញ គឺជាការវិលត្រឡប់មកកាន់ទឹកដីអាស៊ីជាថ្មីម្តងទៀត ក្រោយពីជិត ប៉ុន្មានឆ្នាំ?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ជិត ២០ ឆ្នាំមុន"
+        },
+        {
+          "key": "ខ",
+          "text": "ជិត ២៥ ឆ្នាំមុន"
+        },
+        {
+          "key": "គ",
+          "text": "ជិត ៤០ ឆ្នាំមុន"
+        },
+        {
+          "key": "ឃ",
+          "text": "ជិត ៣០ ឆ្នាំមុន"
+        }
+      ],
+      "correctAnswer": "ឃ",
+      "pdfPage": 2,
+      "id": "topic-francophonie-q5-p2"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 6,
+      "numberKh": "៦",
+      "question": "កាលពីជិត ៣០ ឆ្នាំមុន តើកិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី លើកទីប៉ុន្មាន និងនៅទីក្រុងណាដែលបានប្រព្រឹត្តទៅនៅទឹកដីអាស៊ី?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "លើកទី៧ នៅទីក្រុងហាណូយ (ប្រទេសវៀតណាម)"
+        },
+        {
+          "key": "ខ",
+          "text": "លើកទី៥ នៅទីក្រុងបាងកក"
+        },
+        {
+          "key": "គ",
+          "text": "លើកទី៩ នៅទីក្រុងវៀងចន្ទន៍ (ប្រទេសឡាវ)"
+        },
+        {
+          "key": "ឃ",
+          "text": "លើកទី១០ នៅទីក្រុងម៉ានីល (ប្រទេសហ្វីលីពីន)"
+        }
+      ],
+      "correctAnswer": "ក",
+      "pdfPage": 2,
+      "id": "topic-francophonie-q6-p2"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 7,
+      "numberKh": "៧",
+      "question": "តើនរណាជាអគ្គលេខាធិការហ្វ្រង់កូហ្វូនីដំបូងគេបង្អស់ ដែលត្រូវបានរំឭកឈ្មោះនៅក្នុងសេចក្តីថ្លែងការណ៍នេះ?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ឯកឧត្តម អាប់ឌូ ឌីយូហ្វ"
+        },
+        {
+          "key": "ខ",
+          "text": "លោកជំទាវ មីកាអែល ហ្សង់"
+        },
+        {
+          "key": "គ",
+          "text": "ឯកឧត្តម ប៊ូត្រូស ប៊ូត្រូស-ហ្គាលី"
+        },
+        {
+          "key": "ឃ",
+          "text": "លោកជំទាវ ល្វីស មូស៊ីគីវ៉ាបូ"
+        }
+      ],
+      "correctAnswer": "គ",
+      "pdfPage": 2,
+      "id": "topic-francophonie-q7-p2"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 8,
+      "numberKh": "៨",
+      "question": "តើសេចក្តីប្រកាសទីក្រុងបាម៉ាកូ ដែលចែងអំពីសន្តិភាព លទ្ធិប្រជាធិបតេយ្យ និងសិទ្ធិមនុស្ស ត្រូវបានអនុម័តនៅឆ្នាំណា?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ឆ្នាំ ១៩៩៧"
+        },
+        {
+          "key": "ខ",
+          "text": "ឆ្នាំ ២០០០"
+        },
+        {
+          "key": "គ",
+          "text": "ឆ្នាំ ២០០៦"
+        },
+        {
+          "key": "ឃ",
+          "text": "ឆ្នាំ ២០២២ កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី"
+        }
+      ],
+      "correctAnswer": "ខ",
+      "pdfPage": 2,
+      "id": "topic-francophonie-q8-p2"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 9,
+      "numberKh": "៩",
+      "question": "តើសេចក្តីប្រកាសទីក្រុងសាំងបូនីហ្វាស ត្រូវបានអនុម័តនៅឆ្នាំណា?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ឆ្នាំ ២០០០"
+        },
+        {
+          "key": "ខ",
+          "text": "ឆ្នាំ ២០១៥"
+        },
+        {
+          "key": "គ",
+          "text": "ឆ្នាំ ២០២៤"
+        },
+        {
+          "key": "ឃ",
+          "text": "ឆ្នាំ ២០០៦"
+        }
+      ],
+      "correctAnswer": "ឃ",
+      "pdfPage": 3,
+      "id": "topic-francophonie-q9-p3"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 10,
+      "numberKh": "១០",
+      "question": "តើសេចក្តីប្រកាសស្តីពីភាសាបារាំងក្នុងភាពចម្រុះនៃភាសារបស់អង្គការហ្វ្រង់កូហ្វូនី ត្រូវបានអនុម័តនៅឆ្នាំណា?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ឆ្នាំ ២០២២"
+        },
+        {
+          "key": "ខ",
+          "text": "ឆ្នាំ ២០១៥"
+        },
+        {
+          "key": "គ",
+          "text": "ឆ្នាំ ២០២០"
+        },
+        {
+          "key": "ឃ",
+          "text": "ឆ្នាំ ២០២៦"
+        }
+      ],
+      "correctAnswer": "ក",
+      "pdfPage": 3,
+      "id": "topic-francophonie-q10-p3"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 11,
+      "numberKh": "១១",
+      "question": "តើកត្តាបីណាខ្លះដែលប្រមុខរដ្ឋ និងប្រមុខរដ្ឋាភិបាលជឿជាក់ថា «មិនអាចកាត់ផ្តាច់ពីគ្នាបានទេ» នៅគ្រប់ពេលវេលា និង គ្រប់ទីកន្លែង?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "កីឡា ទេសចរណ៍ និងវប្បធម៌"
+        },
+        {
+          "key": "ខ",
+          "text": "សន្តិភាព វិបុលភាព និងស្ថិរភាព"
+        },
+        {
+          "key": "គ",
+          "text": "កសិកម្ម ឧស្សាហកម្ម និងសេវាកម្ម"
+        },
+        {
+          "key": "ឃ",
+          "text": "ច្បាប់ នយោបាយ និងយោធា"
+        }
+      ],
+      "correctAnswer": "ខ",
+      "pdfPage": 3,
+      "id": "topic-francophonie-q11-p3"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 12,
+      "numberKh": "១២",
+      "question": "តើមធ្យោបាយដ៏ចាំបាច់បំផុតដើម្បីសម្រេចគោលបំណងសន្តិភាព វិបុលភាព និងស្ថិរភាព គឺជាអ្វី?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ការដាក់ទណ្ឌកម្មសេដ្ឋកិច្ច"
+        },
+        {
+          "key": "ខ",
+          "text": "ការប្រកួតប្រជែងសព្វាវុធ"
+        },
+        {
+          "key": "គ",
+          "text": "ការបិទព្រំដែន"
+        },
+        {
+          "key": "ឃ",
+          "text": "កិច្ចសន្ទនា កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី"
+        }
+      ],
+      "correctAnswer": "ឃ",
+      "pdfPage": 3,
+      "id": "topic-francophonie-q12-p3"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 13,
+      "numberKh": "១៣",
+      "question": "តើក្រុមមនុស្សពីរក្រុមណាដែលត្រូវបានលើកឡើងថាជា «ថាមពលប្រកបដោយភាពច្នៃប្រឌិត» និង «កម្លាំងរុញច្រានទៅ រកការផ្លាស់ប្តូរ»?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "យុវជន និងស្ត្រី"
+        },
+        {
+          "key": "ខ",
+          "text": "មន្ត្រីរាជការ និងកងទ័ព"
+        },
+        {
+          "key": "គ",
+          "text": "អ្នកវិទ្យាសាស្ត្រ និងកសិករ"
+        },
+        {
+          "key": "ឃ",
+          "text": "ពាណិជ្ជករ និងសិល្បករ"
+        }
+      ],
+      "correctAnswer": "ក",
+      "pdfPage": 4,
+      "id": "topic-francophonie-q13-p4"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 14,
+      "numberKh": "១៤",
+      "question": "តើការប្តេជ្ញាចិត្តពង្រឹងតួនាទីយុវជន និងស្ត្រីក្នុងការកសាងសន្តិភាព ត្រូវបានធ្វើឡើងស្របតាមឯកសារអ្វី?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "សេចក្តីប្រកាសទីក្រុងប៉ារីស"
+        },
+        {
+          "key": "ខ",
+          "text": "សេចក្តីអំពាវនាវទីក្រុងគីហ្គាលី ដែលអនុម័តក្នុងសន្និសីទថ្នាក់រដ្ឋមន្ត្រីហ្វ្រង់កូហ្វូនី លើកទី៤៦ នៅប្រទេសរ៉្វាន់ដា"
+        },
+        {
+          "key": "គ",
+          "text": "សេចក្តីសម្រេចទីក្រុងហាណូយ"
+        },
+        {
+          "key": "ឃ",
+          "text": "ធម្មនុញ្ញអាស៊ាន"
+        }
+      ],
+      "correctAnswer": "ខ",
+      "pdfPage": 4,
+      "id": "topic-francophonie-q14-p4"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 15,
+      "numberKh": "១៥",
+      "question": "តើកិច្ចសហប្រតិបត្តិការរវាងរដ្ឋ និងរដ្ឋាភិបាលជាសមាជិក ត្រូវឈរលើមូលដ្ឋានគ្រឹះចំនួនបីអ្វីខ្លះ?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ប្រាក់កាស អំណាច និងបច្ចេកវិទ្យា"
+        },
+        {
+          "key": "ខ",
+          "text": "ពាណិជ្ជកម្ម ទេសចរណ៍ និងកីឡា"
+        },
+        {
+          "key": "គ",
+          "text": "ទំនុកចិត្ត សាមគ្គីភាព និងការទទួលខុសត្រូវ"
+        },
+        {
+          "key": "ឃ",
+          "text": "ច្បាប់ តុលាការ និងពន្ធដារ"
+        }
+      ],
+      "correctAnswer": "គ",
+      "pdfPage": 4,
+      "id": "topic-francophonie-q15-p4"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 16,
+      "numberKh": "១៦",
+      "question": "តើសន្តិភាព និងស្ថិរភាព មិនអាចឋិតថេរជានិរន្តរ៍ និងជាស្ថាពរបានទេ ប្រសិនបើគ្មានអ្វី?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ជំនួយឥតសំណង"
+        },
+        {
+          "key": "ខ",
+          "text": "ការផ្លាស់ប្តូររដ្ឋាភិបាលញឹកញាប់"
+        },
+        {
+          "key": "គ",
+          "text": "ការបិទទ្វារសេដ្ឋកិច្ច"
+        },
+        {
+          "key": "ឃ",
+          "text": "ការថែរក្សាការពារ កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី"
+        }
+      ],
+      "correctAnswer": "ឃ",
+      "pdfPage": 4,
+      "id": "topic-francophonie-q16-p4"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 17,
+      "numberKh": "១៧",
+      "question": "តើអង្គការអន្តរជាតិហ្វ្រង់កូហ្វូនី អាចចូលរួមទប់ស្កាត់ និងគ្រប់គ្រងវិបត្តិ ព្រមទាំងគាំទ្រដំណើរការសន្តិភាពតាមរយៈអ្វី?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "គំនិតផ្តួចផ្តើមក្នុងការដើរតួនាទីជាអន្តរការី និងការចូលរួមគាំទ្រអន្តរកាលប្រជាធិបតេយ្យ"
+        },
+        {
+          "key": "ខ",
+          "text": "ការបញ្ជូនកងទ័ពជើងទឹក"
+        },
+        {
+          "key": "គ",
+          "text": "ការដាក់ទណ្ឌកម្មហិរញ្ញវត្ថុ"
+        },
+        {
+          "key": "ឃ",
+          "text": "ការបិទស្ថានទូត"
+        }
+      ],
+      "correctAnswer": "ក",
+      "pdfPage": 5,
+      "id": "topic-francophonie-q17-p5"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 18,
+      "numberKh": "១៨",
+      "question": "តើអង្គការតំបន់ចំនួនពីរណាដែលសេចក្តីថ្លែងការណ៍បានសង្កត់ធ្ងន់ជាពិសេសក្នុងការពង្រឹងកិច្ចសហប្រតិបត្តិការជាមួយ អង្គការអន្តរជាតិហ្វ្រង់កូហ្វូនី?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "សហភាពអឺរ៉ុប និង សហភាពអាហ្វ្រិក"
+        },
+        {
+          "key": "ខ",
+          "text": "សមាគមប្រជាជាតិអាស៊ីអាគ្នេយ៍ (អាស៊ាន) និង សហគមន៍ប៉ាស៊ីហ្វិក"
+        },
+        {
+          "key": "គ",
+          "text": "អង្គការណាតូ និង អង្គការសហប្រជាជាតិ"
+        },
+        {
+          "key": "ឃ",
+          "text": "ក្រុមប្រទេស G7 និង G20"
+        }
+      ],
+      "correctAnswer": "ខ",
+      "pdfPage": 5,
+      "id": "topic-francophonie-q18-p5"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 19,
+      "numberKh": "១៩",
+      "question": "តើអ្វីជា «អាទិភាពយុទ្ធសាស្ត្រ» របស់ហ្វ្រង់កូហ្វូនី ក្នុងនាមជាកម្លាំងជំរុញសាមគ្គីភាព និងការផ្លាស់ប្តូរសង្គម?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ឧស្សាហកម្មធុនធ្ងន់"
+        },
+        {
+          "key": "ខ",
+          "text": "ការរុករករ៉ែ"
+        },
+        {
+          "key": "គ",
+          "text": "សកម្មភាពនានាដើម្បីយុវជន"
+        },
+        {
+          "key": "ឃ",
+          "text": "វិស័យអវកាស"
+        }
+      ],
+      "correctAnswer": "គ",
+      "pdfPage": 5,
+      "id": "topic-francophonie-q19-p5"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 20,
+      "numberKh": "២០",
+      "question": "តើសកម្មភាពអប់រំដើម្បីសន្តិភាព ត្រូវបានអនុវត្តស្របតាមស្មារតីនៃសេចក្តីសម្រេចចិត្តលេខប៉ុន្មានរបស់មហាសន្និបាតអង្គ ការសហប្រជាជាតិ?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "លេខ A/RES/70/1"
+        },
+        {
+          "key": "ខ",
+          "text": "លេខ A/RES/50/100"
+        },
+        {
+          "key": "គ",
+          "text": "លេខ A/RES/60/150"
+        },
+        {
+          "key": "ឃ",
+          "text": "លេខ A/RES/80/266 កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី"
+        }
+      ],
+      "correctAnswer": "ឃ",
+      "pdfPage": 5,
+      "id": "topic-francophonie-q20-p5"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 21,
+      "numberKh": "២១",
+      "question": "តើនិន្នាការអ្វីដែលប្រមុខរដ្ឋ និងប្រមុខរដ្ឋាភិបាលសម្តែងការបារម្ភ ដោយសារវាប៉ះពាល់ដល់ដំណើរការប្រជាធិបតេយ្យ?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "និន្នាការបាត់បង់ជំនឿលើស្ថាប័នផ្លូវការនានា"
+        },
+        {
+          "key": "ខ",
+          "text": "និន្នាការកើនឡើងនៃចំនួនទេសចរ"
+        },
+        {
+          "key": "គ",
+          "text": "និន្នាការប្រើប្រាស់ថាមពលស្អាត"
+        },
+        {
+          "key": "ឃ",
+          "text": "និន្នាការសិក្សាភាសាបរទេស"
+        }
+      ],
+      "correctAnswer": "ក",
+      "pdfPage": 6,
+      "id": "topic-francophonie-q21-p6"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 22,
+      "numberKh": "២២",
+      "question": "តើកម្មវិធីជំរុញសកម្មភាពយុវជនហ្វ្រង់កូហ្វូនី ត្រូវបានដាក់ឱ្យដំណើរការតាំងពីកិច្ចប្រជុំកំពូលណាមក?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "កិច្ចប្រជុំកំពូលហាណូយ (ឆ្នាំ១៩៩៧)"
+        },
+        {
+          "key": "ខ",
+          "text": "កិច្ចប្រជុំកំពូល វីឡេ-កូទើរ៉េ (ឆ្នាំ២០២៤)"
+        },
+        {
+          "key": "គ",
+          "text": "កិច្ចប្រជុំកំពូលដាកា (ឆ្នាំ២០១៤)"
+        },
+        {
+          "key": "ឃ",
+          "text": "កិច្ចប្រជុំកំពូលហ្សឺបា (ឆ្នាំ២០២២)"
+        }
+      ],
+      "correctAnswer": "ខ",
+      "pdfPage": 6,
+      "id": "topic-francophonie-q22-p6"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 23,
+      "numberKh": "២៣",
+      "question": "តើការរក្សាឱ្យបាននូវលំហព័ត៌មានដែលមានគុណភាពខ្ពស់ និងត្រឹមត្រូវ ធ្វើឡើងស្របតាមស្មារតីនៃឯកសារអ្វី?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "សេចក្តីប្រកាសទីក្រុងប៉ារីស"
+        },
+        {
+          "key": "ខ",
+          "text": "កតិកាសញ្ញាទីក្រុងហ្សឺណែវ"
+        },
+        {
+          "key": "គ",
+          "text": "សេចក្តីអំពាវនាវទីក្រុង វីឡេ-កូទើរ៉េ"
+        },
+        {
+          "key": "ឃ",
+          "text": "សេចក្តីថ្លែងការណ៍ភ្នំពេញ"
+        }
+      ],
+      "correctAnswer": "គ",
+      "pdfPage": 6,
+      "id": "topic-francophonie-q23-p6"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 24,
+      "numberKh": "២៤",
+      "question": "តើលំហហ្វ្រង់កូហ្វូនីទាំងមូលត្រូវកៀរគរកម្លាំងដើម្បីប្រយុទ្ធប្រឆាំងនឹងបញ្ហាប្រឈមផ្នែកព័ត៌មានអ្វីខ្លះ?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ការប្រើប្រាស់បច្ចេកវិទ្យាទំនើប"
+        },
+        {
+          "key": "ខ",
+          "text": "ការផលិតភាពយន្តឯកសារ"
+        },
+        {
+          "key": "គ",
+          "text": "ការបង្កើតសារព័ត៌មានឯករាជ្យ"
+        },
+        {
+          "key": "ឃ",
+          "text": "ព័ត៌មានក្លែងក្លាយ និងការជ្រៀតជ្រែកពីបរទេស ដែលអាចបង្កអស្ថិរភាពដល់ស្ថាប័នប្រជាធិបតេយ្យ"
+        }
+      ],
+      "correctAnswer": "ឃ",
+      "pdfPage": 6,
+      "id": "topic-francophonie-q24-p6"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 25,
+      "numberKh": "២៥",
+      "question": "តើការគោរពសេរីភាពសារព័ត៌មាន និងពហុនិយមនៃប្រព័ន្ធផ្សព្វផ្សាយ ត្រូវធានាបាននូវព័ត៌មានដែលគ្មានអ្វី?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "គ្មានភាសាញុះញង់ឱ្យមានការស្អប់ខ្ពើមរើសអើង"
+        },
+        {
+          "key": "ខ",
+          "text": "គ្មានរូបភាពពណ៌"
+        },
+        {
+          "key": "គ",
+          "text": "គ្មានការផ្សាយពាណិជ្ជកម្ម"
+        },
+        {
+          "key": "ឃ",
+          "text": "គ្មានការបកប្រែភាសា"
+        }
+      ],
+      "correctAnswer": "ក",
+      "pdfPage": 7,
+      "id": "topic-francophonie-q25-p7"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 26,
+      "numberKh": "២៦",
+      "question": "តើបណ្តាញទូរទស្សន៍ចម្រុះសាធារណៈរបស់ហ្វ្រង់កូហ្វូនី ដែលត្រូវបានគាំទ្រឱ្យទទួលបានលក្ខណ្ឌផ្សាយដូចបណ្តាញ ទូរទស្សន៍ជាតិ មានឈ្មោះថាអ្វី?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "បណ្តាញទូរទស្សន៍អន្តរជាតិបារាំង"
+        },
+        {
+          "key": "ខ",
+          "text": "ទូរទស្សន៍ប៉ុស្តិ៍លេខ៥ (TV5 / TV5MONDE)"
+        },
+        {
+          "key": "គ",
+          "text": "វិទ្យុបារាំងអន្តរជាតិ"
+        },
+        {
+          "key": "ឃ",
+          "text": "ទូរទស្សន៍វប្បធម៌អឺរ៉ុប"
+        }
+      ],
+      "correctAnswer": "ខ",
+      "pdfPage": 7,
+      "id": "topic-francophonie-q26-p7"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 27,
+      "numberKh": "២៧",
+      "question": "តើបរិវត្តកម្មបញ្ញាសិប្បនិម្មិត ត្រូវបានទទួលស្គាល់ថាជាកម្លាំងជំរុញអ្វីខ្លះ?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ជំរុញការបាត់បង់ការងារទាំងស្រុង"
+        },
+        {
+          "key": "ខ",
+          "text": "ជំរុញការបំផ្លាញវប្បធម៌ប្រពៃណី"
+        },
+        {
+          "key": "គ",
+          "text": "ជំរុញផលិតភាព ការប្រកួតប្រជែង និងការធ្វើទំនើបកម្ម"
+        },
+        {
+          "key": "ឃ",
+          "text": "ជំរុញការចំណាយថវិកាហួសប្រមាណ"
+        }
+      ],
+      "correctAnswer": "គ",
+      "pdfPage": 7,
+      "id": "topic-francophonie-q27-p7"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 28,
+      "numberKh": "២៨",
+      "question": "តើអ្វីត្រូវតែជា «ចំណុចស្នូល» នៃការផ្លាស់ប្តូរ និងការអភិវឌ្ឍបញ្ញាសិប្បនិម្មិត?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ប្រាក់ចំណេញ"
+        },
+        {
+          "key": "ខ",
+          "text": "ម៉ាស៊ីន"
+        },
+        {
+          "key": "គ",
+          "text": "ក្រុមហ៊ុនបច្ចេកវិទ្យាធំៗ"
+        },
+        {
+          "key": "ឃ",
+          "text": "មនុស្ស"
+        }
+      ],
+      "correctAnswer": "ឃ",
+      "pdfPage": 7,
+      "id": "topic-francophonie-q28-p7"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 29,
+      "numberKh": "២៩",
+      "question": "តើហានិភ័យអ្វីខ្លះដែលបញ្ញាសិប្បនិម្មិតបង្កប់ឡើង ដែលអាចប៉ះពាល់ដល់ប្រជាជនងាយរងគ្រោះ និងតុល្យភាពសង្គម?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ភាពលំអៀងមិនត្រឹមត្រូវ និងព័ត៌មានក្លែងក្លាយ"
+        },
+        {
+          "key": "ខ",
+          "text": "ការឡើងកម្ដៅផែនដីដោយផ្ទាល់"
+        },
+        {
+          "key": "គ",
+          "text": "ការខ្វះខាតទឹកស្អាត"
+        },
+        {
+          "key": "ឃ",
+          "text": "ការកើនឡើងនៃតម្លៃប្រេងឥន្ធនៈ"
+        }
+      ],
+      "correctAnswer": "ក",
+      "pdfPage": 8,
+      "id": "topic-francophonie-q29-p8"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 30,
+      "numberKh": "៣០",
+      "question": "ការអភិវឌ្ឍបញ្ញាសិប្បនិម្មិតប្រកបដោយការទទួលខុសត្រូវ ត្រូវធានាឱ្យបាននូវអ្វីដល់អ្នកបង្កើតមាតិកាវប្បធម៌?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ការយកស្នាដៃទៅប្រើប្រាស់ដោយឥតគិតថ្លៃទាំងស្រុង"
+        },
+        {
+          "key": "ខ",
+          "text": "ការផ្តល់ប្រាក់កម្រៃសមរម្យ ស្របតាមច្បាប់ស្តីពីកម្មសិទ្ធិបញ្ញា និងសិទ្ធិពាក់ព័ន្ធ"
+        },
+        {
+          "key": "គ",
+          "text": "ការលុបបំបាត់សិទ្ធិអ្នកនិពន្ធ"
+        },
+        {
+          "key": "ឃ",
+          "text": "ការហាមឃាត់ការបង្កើតមាតិកាថ្មី"
+        }
+      ],
+      "correctAnswer": "ខ",
+      "pdfPage": 8,
+      "id": "topic-francophonie-q30-p8"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 31,
+      "numberKh": "៣១",
+      "question": "ការអភិវឌ្ឍបញ្ញាសិប្បនិម្មិតប្រកបដោយក្រមសីលធម៌ ត្រូវធ្វើឡើងស្របតាមឯកសារអន្តរជាតិអ្វីដែលអនុម័តនៅឆ្នាំ ២០២៤?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "កិច្ចព្រមព្រៀងទីក្រុងប៉ារីស"
+        },
+        {
+          "key": "ខ",
+          "text": "ធម្មនុញ្ញអាស៊ាន"
+        },
+        {
+          "key": "គ",
+          "text": "កតិកាសញ្ញាឌីជីថលពិភពលោក"
+        },
+        {
+          "key": "ឃ",
+          "text": "សន្ធិសញ្ញាក្រុងរ៉ូម"
+        }
+      ],
+      "correctAnswer": "គ",
+      "pdfPage": 8,
+      "id": "topic-francophonie-q31-p8"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 32,
+      "numberKh": "៣២",
+      "question": "តើកិច្ចប្រជុំកំពូលស្តីពីបញ្ញាសិប្បនិម្មិតនាឆ្នាំ ២០២៧ ដែលហ្វ្រង់កូហ្វូនីនឹងចូលរួម ត្រូវប្រព្រឹត្តទៅនៅទីក្រុងណា?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ទីក្រុងប៉ារីស"
+        },
+        {
+          "key": "ខ",
+          "text": "ទីក្រុងញូវយ៉ក"
+        },
+        {
+          "key": "គ",
+          "text": "ទីក្រុងតូក្យូ"
+        },
+        {
+          "key": "ឃ",
+          "text": "ទីក្រុងហ្សឺណែវ"
+        }
+      ],
+      "correctAnswer": "ឃ",
+      "pdfPage": 8,
+      "id": "topic-francophonie-q32-p8"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 33,
+      "numberKh": "៣៣",
+      "question": "តើហ្វ្រង់កូហ្វូនីត្រូវបានលើកទឹកចិត្តឱ្យពង្រឹងសមត្ថភាព និងជំនាញផ្នែកបច្ចេកវិទ្យាឌីជីថល និងបញ្ញាសិប្បនិម្មិត ជា ពិសេសក្នុងចំណោមក្រុមណា?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "យុវជន និងស្ត្រី"
+        },
+        {
+          "key": "ខ",
+          "text": "មនុស្សចាស់ជរា"
+        },
+        {
+          "key": "គ",
+          "text": "កុមារក្រោមអាយុ ៥ ឆ្នាំ"
+        },
+        {
+          "key": "ឃ",
+          "text": "ជនបរទេសក្រៅសហគមន៍"
+        }
+      ],
+      "correctAnswer": "ក",
+      "pdfPage": 9,
+      "id": "topic-francophonie-q33-p9"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 34,
+      "numberKh": "៣៤",
+      "question": "ដើម្បីជំរុញការវិនិយោគ និងកំណើនសេដ្ឋកិច្ចយូរអង្វែងក្នុងហ្វ្រង់កូហ្វូនីសេដ្ឋកិច្ច តើត្រូវធ្វើកិច្ចការអ្វីខ្លះ?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "បង្កើននីតិវិធីរដ្ឋបាលឱ្យកាន់តែស្មុគស្មាញ"
+        },
+        {
+          "key": "ខ",
+          "text": "សម្រួលនីតិវិធីរដ្ឋបាល លើកកម្ពស់តម្លាភាព ឧត្តមានុវត្តន៍ និងភាពសុខុដុមនីយកម្មក្របខ័ណ្ឌបទប្បញ្ញត្តិ"
+        },
+        {
+          "key": "គ",
+          "text": "ហាមឃាត់ការវិនិយោគពីបរទេស"
+        },
+        {
+          "key": "ឃ",
+          "text": "កំណត់តម្លៃទំនិញដោយរដ្ឋទាំងស្រុង"
+        }
+      ],
+      "correctAnswer": "ខ",
+      "pdfPage": 9,
+      "id": "topic-francophonie-q34-p9"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 35,
+      "numberKh": "៣៥",
+      "question": "តើវិស័យអាទិភាពណាខ្លះដែលត្រូវបានលើកទឹកចិត្តសម្រាប់សហគ្រិនភាពស្ត្រី និងយុវជន?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ឧស្សាហកម្មផលិតអាវុធ និងគ្រឿងផ្ទុះ"
+        },
+        {
+          "key": "ខ",
+          "text": "ការកាប់បំផ្លាញព្រៃឈើ"
+        },
+        {
+          "key": "គ",
+          "text": "អន្តរកាលឌីជីថល សេដ្ឋកិច្ចបៃតង ឧស្សាហកម្មវប្បធម៌ និងច្នៃប្រឌិត ព្រមទាំងនវានុវត្តន៍"
+        },
+        {
+          "key": "ឃ",
+          "text": "អាជីវកម្មរ៉ែធ្យូងថ្ម"
+        }
+      ],
+      "correctAnswer": "គ",
+      "pdfPage": 9,
+      "id": "topic-francophonie-q35-p9"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 36,
+      "numberKh": "៣៦",
+      "question": "តើគំនិតផ្តួចផ្តើមសេដ្ឋកិច្ចទាំងអស់ក្នុងក្របខ័ណ្ឌហ្វ្រង់កូហ្វូនី ត្រូវគោរពយ៉ាងពេញលេញនូវអ្វី?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ច្បាប់របស់ប្រទេសអ្នកវិនិយោគតែម្ខាង"
+        },
+        {
+          "key": "ខ",
+          "text": "គោលការណ៍ទីផ្សារផ្តាច់មុខ"
+        },
+        {
+          "key": "គ",
+          "text": "ផលប្រយោជន៍របស់ក្រុមហ៊ុនធំៗតែប៉ុណ្ណោះ"
+        },
+        {
+          "key": "ឃ",
+          "text": "អធិបតេយ្យភាព និងក្របខ័ណ្ឌគតិយុត្តិនៃបណ្តាប្រទេសសមាជិកនានា"
+        }
+      ],
+      "correctAnswer": "ឃ",
+      "pdfPage": 9,
+      "id": "topic-francophonie-q36-p9"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 37,
+      "numberKh": "៣៧",
+      "question": "តើ «វិបត្តិសកលទាំងបី» ដែលប៉ះពាល់ដល់សន្តិភាព និងសន្តិសុខមនុស្សជាតិ គឺជាអ្វី?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "បម្រែបម្រួលអាកាសធាតុ ការបាត់បង់ជីវចម្រុះ និងផ្សែងពុល"
+        },
+        {
+          "key": "ខ",
+          "text": "សង្គ្រាម ជំងឺរាតត្បាត និងអតិផរណា"
+        },
+        {
+          "key": "គ",
+          "text": "គ្រោះរាំងស្ងួត ទឹកជំនន់ និងរញ្ជួយដី"
+        },
+        {
+          "key": "ឃ",
+          "text": "ភាពក្រីក្រ អនក្ខរភាព និងអំពើពុករលួយ"
+        }
+      ],
+      "correctAnswer": "ក",
+      "pdfPage": 10,
+      "id": "topic-francophonie-q37-p10"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 38,
+      "numberKh": "៣៨",
+      "question": "តើកិច្ចព្រមព្រៀងអន្តរជាតិស្តីពីបរិស្ថានចំនួនបីណាខ្លះ ដែលត្រូវបានលើកឡើងជាពិសេសក្នុងសេចក្តីថ្លែងការណ៍?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "សន្ធិសញ្ញាក្រុងក្យូតូ, ពិធីសារម៉ុងរ៉េអាល់ និងអនុសញ្ញាបាសែល"
+        },
+        {
+          "key": "ខ",
+          "text": "កិច្ចព្រមព្រៀងទីក្រុងប៉ារីស (២០១៥), ក្របខ័ណ្ឌសកលជីវចម្រុះគុនមីង-ម៉ុងរ៉េអាល់ (២០២២) និងកិច្ចព្រមព្រៀង BBNJ (២០២៣)"
+        },
+        {
+          "key": "គ",
+          "text": "កិច្ចព្រមព្រៀងទីក្រុងប៉ារីស (១៩៩១), ធម្មនុញ្ញអាស៊ាន និងកិច្ចព្រមព្រៀង RCEP"
+        },
+        {
+          "key": "ឃ",
+          "text": "សន្ធិសញ្ញាទីក្រុងវែសៃ, កតិកាសញ្ញាទីក្រុងហ្សឺណែវ និងធម្មនុញ្ញអង្គការសហប្រជាជាតិ"
+        }
+      ],
+      "correctAnswer": "ខ",
+      "pdfPage": 10,
+      "id": "topic-francophonie-q38-p10"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 39,
+      "numberKh": "៣៩",
+      "question": "តើសន្និសីទលើកទី ១៧ នៃអនុសញ្ញាស្តីពីជីវចម្រុះ (COP17) បានប្រព្រឹត្តទៅនៅទីក្រុង និងប្រទេសណា ក្នុងខែតុលា ឆ្នាំ ២០២៦?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ទីក្រុងគុនមីង ប្រទេសចិន"
+        },
+        {
+          "key": "ខ",
+          "text": "ទីក្រុងម៉ុងរ៉េអាល់ ប្រទេសកាណាដា"
+        },
+        {
+          "key": "គ",
+          "text": "ទីក្រុងអេរ៉េវ៉ាន ប្រទេសអាកមេនី"
+        },
+        {
+          "key": "ឃ",
+          "text": "ទីក្រុងប៉ារីស ប្រទេសបារាំង"
+        }
+      ],
+      "correctAnswer": "គ",
+      "pdfPage": 10,
+      "id": "topic-francophonie-q39-p10"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 40,
+      "numberKh": "៤០",
+      "question": "តើសន្និសីទលើកទី ៣១ នៃអនុសញ្ញាក្របខ័ណ្ឌអង្គការសហប្រជាជាតិស្តីពីការប្រែប្រួលអាកាសធាតុ (COP31) បាន ប្រព្រឹត្តទៅនៅទីក្រុង និងប្រទេសណា នៅថ្ងៃទី ៩ ខែវិច្ឆិកា ឆ្នាំ២០២៦?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ទីក្រុងឌូបៃ ប្រទេសអេមីរ៉ាតអារ៉ាប់រួម"
+        },
+        {
+          "key": "ខ",
+          "text": "ទីក្រុងបាគូ ប្រទេសអាស៊ែបៃហ្សង់"
+        },
+        {
+          "key": "គ",
+          "text": "ទីក្រុងបេឡឹម ប្រទេសប្រេស៊ីល"
+        },
+        {
+          "key": "ឃ",
+          "text": "ទីក្រុងអង់តាល់យ៉ា ប្រទេសតួកគី កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី"
+        }
+      ],
+      "correctAnswer": "ឃ",
+      "pdfPage": 10,
+      "id": "topic-francophonie-q40-p10"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 41,
+      "numberKh": "៤១",
+      "question": "តើសន្និសីទនៃរដ្ឋភាគីលើកទី ១ នៃកិច្ចព្រមព្រៀងជីវចម្រុះសមុទ្រនៅក្រៅដែនសមត្ថកិច្ចជាតិ (BBNJ) នឹងប្រព្រឹត្តទៅនៅ ឆ្នាំណា?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ឆ្នាំ ២០២៧"
+        },
+        {
+          "key": "ខ",
+          "text": "ឆ្នាំ ២០២៦"
+        },
+        {
+          "key": "គ",
+          "text": "ឆ្នាំ ២០២៨"
+        },
+        {
+          "key": "ឃ",
+          "text": "ឆ្នាំ ២០៣០"
+        }
+      ],
+      "correctAnswer": "ក",
+      "pdfPage": 11,
+      "id": "topic-francophonie-q41-p11"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 42,
+      "numberKh": "៤២",
+      "question": "តើសន្និសីទបណ្តារដ្ឋមន្ត្រីក្រសួងវប្បធម៌ហ្វ្រង់កូហ្វូនី លើកទី៥ បានប្រព្រឹត្តទៅនៅទីក្រុងណា និងនៅពេលណា?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ទីក្រុងប៉ារីស នៅខែតុលា ឆ្នាំ២០២៤"
+        },
+        {
+          "key": "ខ",
+          "text": "ទីក្រុងកេប៊ិក នៅខែឧសភា ឆ្នាំ២០២៥"
+        },
+        {
+          "key": "គ",
+          "text": "រាជធានីភ្នំពេញ នៅខែវិច្ឆិកា ឆ្នាំ២០២៦"
+        },
+        {
+          "key": "ឃ",
+          "text": "ទីក្រុងដាកា នៅខែមីនា ឆ្នាំ២០២៥"
+        }
+      ],
+      "correctAnswer": "ខ",
+      "pdfPage": 11,
+      "id": "topic-francophonie-q42-p11"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 43,
+      "numberKh": "៤៣",
+      "question": "តើប្រមុខរដ្ឋ និងប្រមុខរដ្ឋាភិបាលគាំទ្រកិច្ចខិតខំប្រឹងប្រែងរបស់អង្គការយូណេស្កូ ក្នុងការកែសម្រួលអនុសញ្ញាឆ្នាំណា ឱ្យសមស្របទៅនឹងបរិបទឌីជីថល?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "អនុសញ្ញាឆ្នាំ ១៩៧២"
+        },
+        {
+          "key": "ខ",
+          "text": "អនុសញ្ញាឆ្នាំ ២០០៣"
+        },
+        {
+          "key": "គ",
+          "text": "អនុសញ្ញាឆ្នាំ ២០០៥"
+        },
+        {
+          "key": "ឃ",
+          "text": "អនុសញ្ញាឆ្នាំ ១៩៥៤"
+        }
+      ],
+      "correctAnswer": "គ",
+      "pdfPage": 11,
+      "id": "topic-francophonie-q43-p11"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 44,
+      "numberKh": "៤៤",
+      "question": "តើកីឡាអូឡាំពិកយុវជនលើកទី៤ ដែលបានប្រព្រឹត្តទៅជាលើកដំបូងបង្អស់នៅទ្វីបអាហ្វ្រិក ត្រូវបានរៀបចំនៅទីក្រុងណា?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ទីក្រុងគីហ្គាលី (រ៉្វាន់ដា)"
+        },
+        {
+          "key": "ខ",
+          "text": "ទីក្រុងនីយ៉ាមេ (នីហ្សេ)"
+        },
+        {
+          "key": "គ",
+          "text": "ទីក្រុងអាប៊ីហ្សង់ (កូតឌីវ័រ)"
+        },
+        {
+          "key": "ឃ",
+          "text": "ទីក្រុងដាកា (សេណេហ្គាល់) កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី"
+        }
+      ],
+      "correctAnswer": "ឃ",
+      "pdfPage": 11,
+      "id": "topic-francophonie-q44-p11"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 45,
+      "numberKh": "៤៥",
+      "question": "តើការប្រកួតកីឡាហ្វ្រង់កូហ្វូនី លើកទី១០ នៅឆ្នាំ២០២៧ ខាងមុខ នឹងប្រព្រឹត្តទៅនៅទីក្រុង និងប្រទេសណា?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ទីក្រុងអេរ៉េវ៉ាន ប្រទេសអាកម៉េនី"
+        },
+        {
+          "key": "ខ",
+          "text": "ទីក្រុងប៉ារីស ប្រទេសបារាំង"
+        },
+        {
+          "key": "គ",
+          "text": "ទីក្រុងម៉ុងរ៉េអាល់ ប្រទេសកាណាដា"
+        },
+        {
+          "key": "ឃ",
+          "text": "រាជធានីភ្នំពេញ ប្រទេសកម្ពុជា"
+        }
+      ],
+      "correctAnswer": "ក",
+      "pdfPage": 12,
+      "id": "topic-francophonie-q45-p12"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 46,
+      "numberKh": "៤៦",
+      "question": "តើហ្វ្រង់កូហ្វូនីសម្រេចពង្រឹងជំនាញ និងបទពិសោធន៍ពាក់ព័ន្ធនឹងការជួសជុល និងអភិរក្សបេតិកភណ្ឌនៅពេលណា?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "តែក្នុងពេលមានសន្តិភាពប៉ុណ្ណោះ"
+        },
+        {
+          "key": "ខ",
+          "text": "ទាំងក្នុងអំឡុងពេលជម្លោះ និងទាំងក្រោយជម្លោះ"
+        },
+        {
+          "key": "គ",
+          "text": "តែនៅប្រទេសអឺរ៉ុបប៉ុណ្ណោះ"
+        },
+        {
+          "key": "ឃ",
+          "text": "តែសម្រាប់សំណង់ថ្មីៗប៉ុណ្ណោះ"
+        }
+      ],
+      "correctAnswer": "ខ",
+      "pdfPage": 12,
+      "id": "topic-francophonie-q46-p12"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 47,
+      "numberKh": "៤៧",
+      "question": "តើសកម្មភាពរបស់បណ្តាញឌីជីថលហ្វ្រង់កូហ្វូនី (RFN) សម្រាប់បេតិកភ័ណ្ឌឯកសារ មានគោលដៅកាត់បន្ថយអ្វី?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ចំនួនឯកសារប្រវត្តិសាស្ត្រ"
+        },
+        {
+          "key": "ខ",
+          "text": "ការស្រាវជ្រាវវិទ្យាសាស្ត្រ"
+        },
+        {
+          "key": "គ",
+          "text": "វិសមភាពឌីជីថល"
+        },
+        {
+          "key": "ឃ",
+          "text": "ការប្រើប្រាស់បណ្ណាល័យ"
+        }
+      ],
+      "correctAnswer": "គ",
+      "pdfPage": 12,
+      "id": "topic-francophonie-q47-p12"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 48,
+      "numberKh": "៤៨",
+      "question": "តើ «ភាពខ្លាំងរបស់ហ្វ្រង់កូហ្វូនី» ឋិតនៅលើអ្វី?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "ការប្រើប្រាស់កម្លាំងយោធា"
+        },
+        {
+          "key": "ខ",
+          "text": "ការគ្រប់គ្រងដោយប្រទេសតែមួយ"
+        },
+        {
+          "key": "គ",
+          "text": "ការបិទទ្វារមិនទទួលសមាជិកថ្មី"
+        },
+        {
+          "key": "ឃ",
+          "text": "ភាពចម្រុះនៃបណ្តាតួអង្គរបស់ខ្លួន និងសកម្មភាពរួមតម្រង់ទៅកាន់ទិសតែមួយ"
+        }
+      ],
+      "correctAnswer": "ឃ",
+      "pdfPage": 12,
+      "id": "topic-francophonie-q48-p12"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 49,
+      "numberKh": "៤៩",
+      "question": "តើស្ថាប័នសភាប្រើប្រាស់ភាសាបារាំង (APF) មានបំណងប្រាថ្នាក្លាយជាអ្វី?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "សមាជិកសង្កេតការណ៍របស់អង្គការសហប្រជាជាតិ"
+        },
+        {
+          "key": "ខ",
+          "text": "សមាជិកអចិន្ត្រៃយ៍ក្រុមប្រឹក្សាសន្តិសុខអង្គការសហប្រជាជាតិ"
+        },
+        {
+          "key": "គ",
+          "text": "ធនាគារពិភពលោកថ្មី"
+        },
+        {
+          "key": "ឃ",
+          "text": "តុលាការព្រហ្មទណ្ឌអន្តរជាតិ"
+        }
+      ],
+      "correctAnswer": "ក",
+      "pdfPage": 13,
+      "id": "topic-francophonie-q49-p13"
+    },
+    {
+      "sectionId": "topic-francophonie",
+      "sectionTitle": "កិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី (Sommet de la Francophonie - ៥០ សំណួរ)",
+      "categoryGroup": "past-exams",
+      "number": 50,
+      "numberKh": "៥០",
+      "question": "តើប្រតិបត្តិករផ្ទាល់ និងទទួលស្គាល់ដោយកិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនី ចំនួន ៤ ដែលរួមចំណែកអនុវត្តសកម្មភាពប្រចាំថ្ងៃ ជាមួយប្រជាជន មានអ្វីខ្លះ?",
+      "options": [
+        {
+          "key": "ក",
+          "text": "អង្គការយូណេស្កូ យូនីសេហ្វ អង្គការសុខភាពពិភពលោក និងកម្មវិធីអភិវឌ្ឍន៍សហប្រជាជាតិ"
+        },
+        {
+          "key": "ខ",
+          "text": "សមាគមអន្តរជាតិអភិបាលក្រុងនិយាយភាសាបារាំង (AIMF), សាកលវិទ្យាល័យ Senghor, បណ្តាញផ្សព្វផ្សាយ TV5 និង ទីភ្នាក់ងារឧត្តមសិក្សាប្រើប្រាស់ភាសាបារាំង (AUF)"
+        },
+        {
+          "key": "គ",
+          "text": "សមាគមអាស៊ាន វេទិកាអាប៉ិច កិច្ចប្រជុំអាស៊ី-អឺរ៉ុប និងវេទិកាតំបន់អាស៊ាន"
+        },
+        {
+          "key": "ឃ",
+          "text": "មូលនិធិរូបិយវត្ថុអន្តរជាតិ ធនាគារពិភពលោក ធនាគារអភិវឌ្ឍន៍អាស៊ី និងអង្គការពាណិជ្ជកម្មពិភពលោក"
+        }
+      ],
+      "correctAnswer": "ខ",
+      "pdfPage": 13,
+      "id": "topic-francophonie-q50-p13"
     }
   ]
 }

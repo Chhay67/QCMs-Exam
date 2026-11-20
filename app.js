@@ -86,6 +86,7 @@
     // Presets
     presetRandom100: document.getElementById('preset-random-100'),
     presetSeq100: document.getElementById('preset-seq-100'),
+    presetFrancophonie50: document.getElementById('preset-francophonie-50'),
     presetOpenReading: document.getElementById('preset-open-reading'),
 
     // Setup Controls
@@ -1134,6 +1135,20 @@
       startQuizSession();
     });
 
+    if (el.presetFrancophonie50) {
+      el.presetFrancophonie50.addEventListener('click', () => {
+        state.categoryGroupTab = 'past-exams';
+        state.selectedCategoryId = 'topic-francophonie';
+        state.sessionCount = 50;
+        state.timerSecondsPerQuestion = 60;
+        el.catTabs.forEach((t) => t.classList.toggle('active', t.dataset.group === 'past-exams'));
+        setRangeValues(1, 50);
+        renderCategoryList();
+        updateLaunchSummary();
+        startQuizSession();
+      });
+    }
+
     // Order Mode Toggle (Random vs Sequence)
     el.modeBtnRandom.addEventListener('click', () => setOrderMode('random'));
     el.modeBtnSequence.addEventListener('click', () => setOrderMode('sequence'));
@@ -1185,8 +1200,8 @@
           state.selectedCategoryId = 'bank-all';
           setRangeValues(1, 100);
         } else if (state.categoryGroupTab === 'past-exams') {
-          state.selectedCategoryId = 'exam-kramkar-7';
-          setRangeValues(1, 40);
+          state.selectedCategoryId = 'topic-francophonie';
+          setRangeValues(1, 50);
         } else {
           state.selectedCategoryId = 'all-pools';
           setRangeValues(1, 100);
