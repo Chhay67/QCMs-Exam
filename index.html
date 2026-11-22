@@ -65,7 +65,7 @@
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <span>អានឯកសារ សំណួរ-ចម្លើយ (២ ឯកសារ)</span>
+          <span>អានឯកសារ សំណួរ-ចម្លើយ (៣ ឯកសារ)</span>
         </button>
         <button type="button" class="btn-ghost" id="btn-open-browse" aria-label="មើលបញ្ជីសំណួរទាំងអស់">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
@@ -113,9 +113,9 @@
             <div class="preset-desc">ហ្វឹកហាត់សំណួរ QCM ទាំង ៥០ សំណួរ អំពីកិច្ចប្រជុំកំពូលហ្វ្រង់កូហ្វូនីនៅភ្នំពេញ</div>
           </button>
           <button type="button" class="preset-card" id="preset-open-reading">
-            <div class="preset-tag">ឯកសារអានជំនួយស្មារតី</div>
-            <div class="preset-title">កម្រងសំណួរ និងចម្លើយ៖ អាស៊ាន &amp; អភិបាលកិច្ចល្អ</div>
-            <div class="preset-desc">អានសំណួរ-ចម្លើយលម្អិតទាំង ១៦១ សំណួរ (អាស៊ាន ១០១ &amp; អភិបាលកិច្ចល្អ ៦០)</div>
+            <div class="preset-tag">ឯកសារអានជំនួយស្មារតី (៣ ឯកសារ • ២៣១ Q&amp;A)</div>
+            <div class="preset-title">កម្រងសំណួរ-ចម្លើយ៖ មុខងារសាធារណៈ, អាស៊ាន &amp; អភិបាលកិច្ចល្អ</div>
+            <div class="preset-desc">អានសំណួរ-ចម្លើយលម្អិតទាំង ២៣១ សំណួរ (មុខងារសាធារណៈ ៧០, អាស៊ាន ១០១, អភិបាលកិច្ចល្អ ៦០)</div>
           </button>
         </div>
       </div>
@@ -475,14 +475,14 @@
       </div>
     </section>
 
-    <!-- VIEW 5: READING DOCUMENTS (កម្រងសំណួរ និងចម្លើយ៖ អាស៊ាន & អភិបាលកិច្ចល្អ) -->
+    <!-- VIEW 5: READING DOCUMENTS (កម្រងសំណួរ និងចម្លើយ៖ មុខងារសាធារណៈ, អាស៊ាន & អភិបាលកិច្ចល្អ) -->
     <section class="reading-view hidden" id="reading-view" aria-labelledby="reading-heading">
       <div class="browse-toolbar-card">
         <div class="browse-toolbar-top">
           <div>
-            <span class="results-kicker">ឯកសារជំនួយស្មារតី • រៀបរៀងដោយ៖ ឡេង ចាន់មករា</span>
-            <h2 id="reading-heading" class="section-title">កម្រងសំណួរ និងចម្លើយសម្រាប់អានត្រៀមប្រឡង (១៦១ សំណួរ-ចម្លើយ)</h2>
-            <p class="section-subtitle">ជ្រើសរើសឯកសារ «អាស៊ាន (ASEAN)» ឬ «អភិបាលកិច្ចល្អ (Good Governance)» ដើម្បីអាន ឬសាកល្បងទន្ទេញចម្លើយ</p>
+            <span class="results-kicker">ឯកសារជំនួយស្មារតី • សម្រាប់អាន និងទន្ទេញត្រៀមប្រឡង</span>
+            <h2 id="reading-heading" class="section-title">កម្រងសំណួរ និងចម្លើយសម្រាប់អានត្រៀមប្រឡង (៣ ឯកសារ • ២៣១ សំណួរ-ចម្លើយ)</h2>
+            <p class="section-subtitle">ជ្រើសរើសឯកសារ «វិស័យមុខងារសាធារណៈ (៧០)», «អាស៊ាន (១០១)» ឬ «អភិបាលកិច្ចល្អ (៦០)» ដើម្បីអាន ឬសាកល្បងទន្ទេញចម្លើយ</p>
           </div>
           <button type="button" class="btn-secondary" id="btn-close-reading">
             <span>ត្រឡប់ទៅទំព័រដើម</span>
@@ -492,17 +492,22 @@
         <!-- Document Switcher Cards -->
         <div class="reading-doc-tabs" id="reading-doc-tabs" role="tablist" aria-label="ជ្រើសរើសឯកសារអាន">
           <button type="button" class="reading-doc-tab active" data-doc-id="all" role="tab" aria-selected="true">
-            <div class="doc-tab-badge">រួមទាំង ២ ឯកសារ (១៦១ សំណួរ)</div>
+            <div class="doc-tab-badge">រួមទាំង ៣ ឯកសារ (២៣១ សំណួរ)</div>
             <div class="doc-tab-title">គ្រប់ឯកសារសំណួរ-ចម្លើយទាំងអស់</div>
-            <div class="doc-tab-sub">អាស៊ាន (១០១ សំណួរ) + អភិបាលកិច្ចល្អ (៦០ សំណួរ)</div>
+            <div class="doc-tab-sub">មុខងារសាធារណៈ (៧០) + អាស៊ាន (១០១) + អភិបាលកិច្ចល្អ (៦០)</div>
+          </button>
+          <button type="button" class="reading-doc-tab" data-doc-id="doc-public-service" role="tab" aria-selected="false">
+            <div class="doc-tab-badge">ឯកសារថ្មី • ៧០ សំណួរ</div>
+            <div class="doc-tab-title">កម្រងសំណួរចម្លើយ «វិស័យមុខងារសាធារណៈ»</div>
+            <div class="doc-tab-sub">សេវាសាធារណៈ សហលក្ខន្តិកៈ លិខិតគតិយុត្ត កំណែទម្រង់ និងរដ្ឋបាលមូលដ្ឋាន</div>
           </button>
           <button type="button" class="reading-doc-tab" data-doc-id="doc-asean" role="tab" aria-selected="false">
-            <div class="doc-tab-badge">ឯកសារទី ១ • ១០១ សំណួរ</div>
+            <div class="doc-tab-badge">ឯកសារទី ២ • ១០១ សំណួរ</div>
             <div class="doc-tab-title">កម្រងសំណួរ និងចម្លើយ «អំពី អាស៊ាន»</div>
             <div class="doc-tab-sub">ប្រវត្តិ សសរស្តម្ភទាំង ៣ ធម្មនុញ្ញ ដៃគូសន្ទនា និងកម្ពុជាក្នុងអាស៊ាន</div>
           </button>
           <button type="button" class="reading-doc-tab" data-doc-id="doc-good-gov" role="tab" aria-selected="false">
-            <div class="doc-tab-badge">ឯកសារទី ២ • ៦០ សំណួរ</div>
+            <div class="doc-tab-badge">ឯកសារទី ៣ • ៦០ សំណួរ</div>
             <div class="doc-tab-title">កម្រងសំណួរចម្លើយអំពី «អភិបាលកិច្ចល្អ»</div>
             <div class="doc-tab-sub">គោលការណ៍ទាំង ៩ កំណែទម្រង់រដ្ឋបាល គណនេយ្យភាព និងរដ្ឋបាលមូលដ្ឋាន</div>
           </button>
@@ -514,7 +519,7 @@
             <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
               <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35" stroke-linecap="round"/>
             </svg>
-            <input type="search" id="reading-search-input" placeholder="ស្វែងរកសំណួរ ឬខ្លឹមសារចម្លើយ (ឧ. ធម្មនុញ្ញ, តម្លាភាព, RCEP, គោលការណ៍ទាំង ៩)..." />
+            <input type="search" id="reading-search-input" placeholder="ស្វែងរកសំណួរ ឬខ្លឹមសារចម្លើយ (ឧ. សេវាសាធារណៈ, សហលក្ខន្តិកៈ, ធម្មនុញ្ញ, តម្លាភាព)..." />
           </div>
 
           <select id="reading-section-select" class="select-input" aria-label="ជ្រើសរើសផ្នែកក្នុងឯកសារ">
@@ -527,7 +532,7 @@
         </div>
       </div>
 
-      <div class="browse-results-info" id="reading-results-info">បង្ហាញ ១៦១ សំណួរ-ចម្លើយ</div>
+      <div class="browse-results-info" id="reading-results-info">បង្ហាញ ២៣១ សំណួរ-ចម្លើយ</div>
       <div class="reading-cards-container" id="reading-cards-container"></div>
     </section>
   </main>

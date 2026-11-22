@@ -988,7 +988,11 @@
           `;
 
         const docShortName =
-          item.docId === 'doc-asean' ? 'ឯកសារ៖ អាស៊ាន (ASEAN)' : 'ឯកសារ៖ អភិបាលកិច្ចល្អ';
+          item.docId === 'doc-public-service'
+            ? 'ឯកសារ៖ វិស័យមុខងារសាធារណៈ'
+            : item.docId === 'doc-asean'
+            ? 'ឯកសារ៖ អាស៊ាន (ASEAN)'
+            : 'ឯកសារ៖ អភិបាលកិច្ចល្អ';
 
         return `
           <article class="reading-qa-card">
