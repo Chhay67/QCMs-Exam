@@ -217,12 +217,32 @@
   // INITIALIZATION
   // =========================================================================
 
+  async function ensureReadingDocsLoaded() {
+    if (state.readingItems.length > 0 && state.readingDocs.length >= 3) {
+      return;
+    }
+    let readingData = window.READING_DOCS_DATASET;
+    if (!readingData || !Array.isArray(readingData.documents) || readingData.documents.length < 3) {
+      try {
+        const rResp = await fetch('./data/reading_docs.json?v=3');
+        if (rResp.ok) {
+          readingData = await rResp.json();
+          window.READING_DOCS_DATASET = readingData;
+        }
+      } catch (_) {}
+    }
+    if (readingData && Array.isArray(readingData.documents)) {
+      state.readingDocs = readingData.documents;
+      state.readingItems = readingData.documents.flatMap((d) => d.items || []);
+    }
+  }
+
   async function initApp() {
     try {
       initEyeCarePreferences();
       let data = window.QCM_DATASET;
       if (!data) {
-        const response = await fetch('./data/questions.json');
+        const response = await fetch('./data/questions.json?v=3');
         if (!response.ok) {
           throw new Error(`HTTP error ${response.status}`);
         }
@@ -232,24 +252,14 @@
       state.allQuestions = data.questions || [];
       state.categories = data.categories || [];
 
-      // Load Reading Documents Dataset (ASEAN & Good Governance Q&A)
-      let readingData = window.READING_DOCS_DATASET;
-      if (!readingData) {
-        try {
-          const rResp = await fetch('./data/reading_docs.json');
-          if (rResp.ok) readingData = await rResp.json();
-        } catch (_) {}
-      }
-      if (readingData && Array.isArray(readingData.documents)) {
-        state.readingDocs = readingData.documents;
-        state.readingItems = readingData.documents.flatMap((d) => d.items || []);
-      }
+      await ensureReadingDocsLoaded();
 
       el.totalBankBadge.textContent = `${toKhmerNum(state.allQuestions.length)} សំណួរក្នុង PDF`;
 
       populateBrowseCategorySelect();
       populateReadingSectionSelect();
       renderCategoryList();
+      renderReadingDocuments();
       updateLaunchSummary();
       bindEvents();
 
@@ -1021,8 +1031,14 @@
     });
   }
 
-  function openReadingView(docId = 'all') {
+  async function openReadingView(docId = 'all') {
+    await ensureReadingDocsLoaded();
     state.selectedReadingDocId = docId;
+    state.selectedReadingSection = 'all';
+    if (el.readingSearchInput) {
+      el.readingSearchInput.value = '';
+    }
+    el.readingDocTabs = document.querySelectorAll('.reading-doc-tab');
     el.readingDocTabs.forEach((tab) => {
       const isMatch = tab.dataset.docId === docId;
       tab.classList.toggle('active', isMatch);
@@ -1061,7 +1077,8 @@
       el.btnCloseReading.addEventListener('click', () => showView('setup'));
     }
     el.readingDocTabs.forEach((tab) => {
-      tab.addEventListener('click', () => {
+      tab.addEventListener('click', async () => {
+        await ensureReadingDocsLoaded();
         state.selectedReadingDocId = tab.dataset.docId;
         el.readingDocTabs.forEach((t) => {
           const isMatch = t === tab;
